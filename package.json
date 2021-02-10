@@ -1,0 +1,25 @@
+{
+  "name": "datanexus-updater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "AddNewDataSet.js",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.11.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atlregional/datanexus-updater.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atlregional/datanexus-updater/issues"
+  },
+  "homepage": "https://github.com/atlregional/datanexus-updater#readme"
+}

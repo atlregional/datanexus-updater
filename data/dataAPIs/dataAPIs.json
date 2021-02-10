@@ -1,0 +1,170 @@
+[
+    {
+        "_id" : "ACSAllGeo2017-0",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACSAllGeo2017/FeatureServer/0",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"
+    },
+    {
+        "_id" : "ACSAllGeo2017-1",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACSAllGeo2017/FeatureServer/1",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"    
+    },
+    {
+        "_id" : "ACSAllGeo2017-2",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACSAllGeo2017/FeatureServer/2",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"
+    },
+    {
+        "_id" : "ACSAllGeo2017-3",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACSAllGeo2017/FeatureServer/3",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"
+    },
+    {
+        "_id" : "ACSAllGeo2017-4",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACSAllGeo2017/FeatureServer/4",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"
+    },
+    {
+        "_id" : "ACSAllGeo2017-5",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACSAllGeo2017/FeatureServer/5",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"
+    },
+    {
+        "_id" : "ACSAllGeo2017-6",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACSAllGeo2017/FeatureServer/6",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"
+    },
+    {
+        "_id" : "ACSAllGeo2017-7",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACSAllGeo2017/FeatureServer/7",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"
+    },
+    {
+        "_id" : "ACSAllGeo2018-0",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACS2018AllGeo/FeatureServer/0",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"
+    },
+    {
+        "_id" : "ACSAllGeo2018-1",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACS2018AllGeo/FeatureServer/1",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"
+    },
+    {
+        "_id" : "ACSAllGeo2018-2",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACS2018AllGeo/FeatureServer/2",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"
+    },
+    {
+        "_id" : "ACSAllGeo2018-3",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACS2018AllGeo/FeatureServer/3",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"
+    },
+    {
+        "_id" : "ACSAllGeo2018-4",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACS2018AllGeo/FeatureServer/4",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"
+    },
+    {
+        "_id" : "ACSAllGeo2018-5",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACS2018AllGeo/FeatureServer/5",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"
+    },
+    {
+        "_id" : "ACSAllGeo2018-6",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACS2018AllGeo/FeatureServer/6",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"
+    },
+    {
+        "_id" : "ACSAllGeo2018-7",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACS2018AllGeo/FeatureServer/7",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"
+    },
+    {
+        "_id" : "ACSAllGeo2018-8",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACS2018AllGeo/FeatureServer/8",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"
+    },
+    {
+        "_id" : "ACSAllGeo2018-9",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/ACS2018AllGeo/FeatureServer/9",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": "SumLevel",
+        "joinField": "GEOID"
+    },
+    {
+        "_id" : "GA_Schools_2019",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/Schools_in_the_State_of_Georgia_2019/FeatureServer/0",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField": null,
+        "joinField": "SysSchool"
+    },
+    {
+        "_id" : "JobFlows_LEHD_2010_2017",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/JobFlows_LEHD_allgeographies_2010_2017/FeatureServer/0",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField" : "SumLevel",
+        "joinField" : "GEOID"
+    },
+    {
+        "_id" : "Maternal_Health_2008_18",
+        "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/Maternal_Health_in_the_state_of_Georgia_2008_2018/FeatureServer/0",
+        "type" : "REST",
+        "source": "ARC OpenData",
+        "geoField" : null,
+        "joinField" : "GEOID"
+    }
+]
