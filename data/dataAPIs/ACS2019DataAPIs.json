@@ -1,82 +1,82 @@
 [
-  {
-    "_id" : "ACSAllGeo2019-Change2000",
-    "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/ChangeSince2000_AllGeo_ACS2019/FeatureServer/0",
-    "type" : "REST",
-    "source": "ARC OpenData",
-    "geoField" : "SumLevel",
-    "joinField" : "GEOID"
-  },
-  {
-    "_id" : "ACSAllGeo2019-Change2010",
-    "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/ChangeSince2000_AllGeo_ACS2019/FeatureServer/0",
-    "type" : "REST",
-    "source": "ARC OpenData",
-    "geoField" : "SumLevel",
-    "joinField" : "GEOID"
-  },
-  {
-    "_id" : "ACSAllGeo2019-Economic",
-    "url" : "",
-    "type" : "REST",
-    "source": "ARC OpenData",
-    "geoField" : "SumLevel",
-    "joinField" : "GEOID"
-  },
-  {
-    "_id" : "ACSAllGeo2019-Demographic",
-    "url" : "",
-    "type" : "REST",
-    "source": "ARC OpenData",
-    "geoField" : "SumLevel",
-    "joinField" : "GEOID"
-  },
-  {
-    "_id" : "ACSAllGeo2019-Social",
-    "url" : "",
-    "type" : "REST",
-    "source": "ARC OpenData",
-    "geoField" : "SumLevel",
-    "joinField" : "GEOID"
-  },
-  {
-    "_id" : "ACSAllGeo2019-Housing",
-    "url" : "",
-    "type" : "REST",
-    "source": "ARC OpenData",
-    "geoField" : "SumLevel",
-    "joinField" : "GEOID"
-  },
-  {
-    "_id" : "ACSAllGeo2019-RaceEconomic",
-    "url" : "",
-    "type" : "REST",
-    "source": "ARC OpenData",
-    "geoField" : "SumLevel",
-    "joinField" : "GEOID"
-  },
-  {
-    "_id" : "ACSAllGeo2019-RaceDemographic",
-    "url" : "",
-    "type" : "REST",
-    "source": "ARC OpenData",
-    "geoField" : "SumLevel",
-    "joinField" : "GEOID"
-  },
-  {
-    "_id" : "ACSAllGeo2019-RaceSocial",
-    "url" : "",
-    "type" : "REST",
-    "source": "ARC OpenData",
-    "geoField" : "SumLevel",
-    "joinField" : "GEOID"
-  },
-  {
-    "_id" : "ACSAllGeo2019-RaceHousing",
-    "url" : "",
-    "type" : "REST",
-    "source": "ARC OpenData",
-    "geoField" : "SumLevel",
-    "joinField" : "GEOID"
-  },
+	{
+		"_id": "ACSAllGeo2019-Change2000",
+		"url": "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/ChangeSince2000_AllGeo_ACS2019/FeatureServer/0",
+		"type": "REST",
+		"source": "ARC OpenData",
+		"geoField": "SumLevel",
+		"joinField": "GEOID"
+	},
+	{
+		"_id": "ACSAllGeo2019-Change2010",
+		"url": "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/ChangeSince2010_AllGeo_ACS2019/FeatureServer/0",
+		"type": "REST",
+		"source": "ARC OpenData",
+		"geoField": "SumLevel",
+		"joinField": "GEOID"
+	},
+	{
+		"_id": "ACSAllGeo2019-Economic",
+		"url": "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/Economic_AllGeo_ACS2019/FeatureServer/0",
+		"type": "REST",
+		"source": "ARC OpenData",
+		"geoField": "SumLevel",
+		"joinField": "GEOID"
+	},
+	{
+		"_id": "ACSAllGeo2019-Demographic",
+		"url": "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/Demographic_AllGeo_ACS2019/FeatureServer/0",
+		"type": "REST",
+		"source": "ARC OpenData",
+		"geoField": "SumLevel",
+		"joinField": "GEOID"
+	},
+	{
+		"_id": "ACSAllGeo2019-Social",
+		"url": "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/Social_AllGeo_ACS2019/FeatureServer/0",
+		"type": "REST",
+		"source": "ARC OpenData",
+		"geoField": "SumLevel",
+		"joinField": "GEOID"
+	},
+	{
+		"_id": "ACSAllGeo2019-Housing",
+		"url": "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/Housing_AllGeo_ACS2019/FeatureServer/0",
+		"type": "REST",
+		"source": "ARC OpenData",
+		"geoField": "SumLevel",
+		"joinField": "GEOID"
+	},
+	{
+		"_id": "ACSAllGeo2019-RaceEconomic",
+		"url": "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/Race_Economic_AllGeo_ACS2019/FeatureServer/0",
+		"type": "REST",
+		"source": "ARC OpenData",
+		"geoField": "SumLevel",
+		"joinField": "GEOID"
+	},
+	{
+		"_id": "ACSAllGeo2019-RaceDemographic",
+		"url": "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/Race_Demographic_AllGeo_ACS2019/FeatureServer/0",
+		"type": "REST",
+		"source": "ARC OpenData",
+		"geoField": "SumLevel",
+		"joinField": "GEOID"
+	},
+	{
+		"_id": "ACSAllGeo2019-RaceSocial",
+		"url": "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/Race_Social_AllGeo_ACS2019/FeatureServer/0",
+		"type": "REST",
+		"source": "ARC OpenData",
+		"geoField": "SumLevel",
+		"joinField": "GEOID"
+	},
+	{
+		"_id": "ACSAllGeo2019-RaceHousing",
+		"url": "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/Race_Housing_AllGeo_ACS2019/FeatureServer/0",
+		"type": "REST",
+		"source": "ARC OpenData",
+		"geoField": "SumLevel",
+		"joinField": "GEOID"
+	}
 ]
