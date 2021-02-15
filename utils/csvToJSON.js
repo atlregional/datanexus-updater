@@ -1,7 +1,6 @@
 const fs = require('fs');
 
-
-const csvToJSON = csvPath => {
+module.exports = csvPath => {
 	// Removing " symbols and splitting into rows
 	const rows = fs.readFileSync(csvPath, 'utf-8').replace(/"/g, '').split('\n');
 	const cols = rows[0].split(',');
