@@ -1,7 +1,7 @@
 require('dotenv');
 const mongoose = require('mongoose');
 const db = require('./models');
-const csvToJSON = require('./utils/csvToJSON');
+const csvToJSON = require('csvtojson');
 const handleNoArgs = require('./utils/handleNoArgs');
 
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/datanexus';
@@ -68,7 +68,7 @@ const init = async (dataAPIsFile, manifestCSV, geosArr) => {
 		const geoAPIsToUpdate = require(`./update/${geosArr}`);
 
 		const newDataAPIKeys = newDataAPIs.map(api => api._id);
-		const newManifestJSON = csvToJSON(manifestPath);
+		const newManifestJSON = await csvToJSON().fromFile(manifestPath);
 
 		await insertDataAPIs(newDataAPIs);
 
