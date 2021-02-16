@@ -19,45 +19,23 @@ mongoose.connect(MONGODB_URI, {
 const insertDataAPIs = async data => {
 	await db.dataAPI
 		.insertMany(data)
-		.then(() => console.log('\nSuccessfully Inserted: DataAPIs'))
+		.then(() => console.log('\nSuccessfully Inserted: DataAPIs\n'))
 		.catch(err => {
 			console.log(err);
 			process.exit(1);
 		});
 };
 
-const updateGeoAPIDataIDs = async (newDataAPIKeys, geoAPIsToUpdate) => {
-	await db.geoAPI
-		.find()
-		.then(data => {
-			console.log('\nUpdating GeoAPIs...\n');
-
-			// Loops through GeoAPIs: Updates dataAPI array of given geosAPIsToUpdate by concatenating existing array with newly added dataAPIs' keys
-			data.forEach(geoAPI => {
-				geoAPIsToUpdate.forEach(updateId => {
-					geoAPI._id === updateId
-						? db.geoAPI
-								.updateOne(
-									{ _id: geoAPI._id },
-									{
-										dataAPIs: geoAPI.dataAPIs.concat(
-											newDataAPIKeys
-										)
-									}
-								)
-								.then(res =>
-									res.ok === 1
-										? console.log(
-												`Successfully Updated: ${geoAPI._id}`
-										  )
-										: null
-								)
-								.catch(err => console.log(err))
-						: null;
-				});
-			});
-		})
-		.catch(err => console.log(err));
+const updateGeoAPIsDataAPI = async (newDataAPIKeys, geoAPIsToUpdate) => {
+	console.log('Updating geoAPIs...\n');
+	await geoAPIsToUpdate.forEach(updateId => {
+		db.geoAPI
+			.updateOne({ _id: updateId }, { $push: { dataAPIs: newDataAPIKeys } })
+			.then(res =>
+				res.ok === 1 ? console.log(`Successfully Updated: ${updateId}`) : null
+			)
+			.catch(err => console.log(err));
+	});
 };
 
 const insertManifest = async data => {
@@ -72,31 +50,18 @@ const insertManifest = async data => {
 
 const updateDefaultConfig = async newDataAPIKeys => {
 	await db.defaultConfig
-		.findOne({ name: 'default' })
-		.then(data => {
-			db.defaultConfig
-				.updateOne({ name: data.name }, { dataAPIs: data.dataAPIs.concat(newDataAPIKeys) })
-				.then(res => {
-					res.ok === 1
-						? console.log('\nSuccessfully Updated: defaultConfig.dataAPIs')
-						: null;
+		.updateOne({ name: 'default' }, { $push: { dataAPIs: newDataAPIKeys } })
+		.then(res => {
+			res.ok === 1
+				? console.log('\nSuccessfully Updated: defaultConfig.dataAPIs')
+				: null;
 
-					console.log('\nNew Data Set Added\n');
-					process.exit(0);
-				})
-				.catch(err => {
-					console.log(err);
-					process.exit(1);
-				});
-		})
-		.catch(err => {
-			console.log(err);
-			process.exit(1);
+			console.log('\nNew Data Set Added\n');
+			process.exit(0);
 		});
 };
 
 const init = async (dataAPIsFile, manifestCSV, geosArr) => {
-	// Try / Catch will help catch any errors associated with file imports
 	try {
 		const newDataAPIs = require(`./data/dataAPIs/${dataAPIsFile}`);
 		const manifestPath = `./data/manifests/${manifestCSV}`;
@@ -107,7 +72,7 @@ const init = async (dataAPIsFile, manifestCSV, geosArr) => {
 
 		await insertDataAPIs(newDataAPIs);
 
-		await updateGeoAPIDataIDs(newDataAPIKeys, geoAPIsToUpdate);
+		await updateGeoAPIsDataAPI(newDataAPIKeys, geoAPIsToUpdate);
 
 		await insertManifest(newManifestJSON);
 
@@ -119,6 +84,7 @@ const init = async (dataAPIsFile, manifestCSV, geosArr) => {
 };
 
 // arg2: New DataAPI File, arg3: Manifest CSV, arg4: Array of GeoAPIs to update with newly added DataAPIs
+// arg4 should be an exported array located in the 'update' directory
 process.argv[2] && process.argv[3] && process.argv[4]
 	? init(process.argv[2], process.argv[3], process.argv[4])
 	: handleNoArgs();
