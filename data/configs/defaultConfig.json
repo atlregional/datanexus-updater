@@ -1,545 +1,539 @@
 {
-  "geoAPIs": [
-    "state",
-    "counties",
-    "gazcta",
-    "cities",
-    "gahouse",
-    "gasenate",
-    "gatracts",
-    "coanpu",
-    "coansa",
-    "uscongress",
-    "rc",
-    "superdistrict",
-    "ga-schools-2019",
-    "arctracts",
-    "arczcta"
-  ],
-  "dataAPIs": [
-    "ACSAllGeo2017-0",
-    "ACSAllGeo2017-1",
-    "ACSAllGeo2017-2",
-    "ACSAllGeo2017-3",
-    "ACSAllGeo2017-4",
-    "ACSAllGeo2017-5",
-    "ACSAllGeo2017-6",
-    "ACSAllGeo2017-7",
-    "ACSAllGeo2018-0",
-    "ACSAllGeo2018-1",
-    "ACSAllGeo2018-2",
-    "ACSAllGeo2018-3",
-    "ACSAllGeo2018-4",
-    "ACSAllGeo2018-5",
-    "ACSAllGeo2018-6",
-    "ACSAllGeo2018-7",
-    "ACSAllGeo2018-8",
-    "ACSAllGeo2018-9",
-    "GA_Schools_2019",
-    "JobFlows_LEHD_2010_2017",
-    "Maternal_Health_2008_18",
-    "School_By_Tract_18_19"
-  ],
-  "tileLayers": [
-    "tile-layer-color",
-    "tile-arcgis-grey",
-    "tile-arcgis-satellite",
-    "tile-arcgis-color",
-    "tile-natgeo",
-    "tile-layer-dark"
-  ],
-  "name": "default",
-  "style": {
-    "colorPalette": [
-      "#ffb3ba",
-      "#ffdfba",
-      "#ffffba",
-      "#baffc9",
-      "#bae1ff"
-    ],
-    "header": {
-      "logoUrl": "https://neighborhoodnexus.org/wp-content/uploads/2020/05/neighborhood-nexus-logo-sticky-2x-2.png"
-    },
-    "footer": {
-      "bgUrl": "https://www.transparenttextures.com/patterns/diagmonds-light.png",
-      "logoUrl": "https://neighborhoodnexus.org/wp-content/uploads/2016/04/neighborhood-nexus-logo.png",
-      "bgcolor": "#EDF3F1"
-    },
-    "tabbedboxes": {
-      "bgcolor2": "lightgrey",
-      "bgcolor1": "lightgrey"
-    },
-    "navbar": {
-      "bgUrl": "https://www.transparenttextures.com/patterns/diagmonds-light.png",
-      "logoUrl": "https://via.placeholder.com/300x40.png?text=Logo+Goes+Here",
-      "bgcolor": "#EDF3F1"
-    },
-    "mainwrapper": {
-      "bgcolor": null
-    },
-    "global": {
-      "borderradius": "10px"
-    }
-  },
-  "states": {
-    "map": {
-      "center": null,
-      "zoom": null
-    },
-    "layers": {
-      "rc": {
-        "style": {
-          "opacity": {
-            "$numberDouble": "0.8"
-          },
-          "borderColor": "teal",
-          "borderWidth": {
-            "$numberInt": "3"
-          },
-          "borderType": "solid",
-          "fillColor": "teal",
-          "data": {
-            "colormapReverse": false,
-            "numOfBins": {
-              "$numberInt": "72"
-            },
-            "colormap": "portland"
-          }
-        },
-        "label": "Georgia Regional Commissions",
-        "shortlabel": "RCs",
-        "boundingGEO": "State",
-        "visible": true,
-        "selected": false,
-        "priority": {
-          "$numberDouble": "2.0"
-        }
-      },
-      "superdistrict": {
-        "style": {
-          "opacity": {
-            "$numberDouble": "0.8"
-          },
-          "borderColor": "teal",
-          "borderWidth": {
-            "$numberInt": "3"
-          },
-          "borderType": "solid",
-          "fillColor": "teal",
-          "data": {
-            "colormapReverse": false,
-            "numOfBins": {
-              "$numberInt": "72"
-            },
-            "colormap": "portland"
-          }
-        },
-        "label": "Super Districts",
-        "shortlabel": "SDs",
-        "boundingGEO": "State",
-        "visible": true,
-        "priority": {
-          "$numberDouble": "7.0"
-        },
-        "selected": false
-      },
-      "uscongress": {
-        "style": {
-          "opacity": {
-            "$numberDouble": "0.8"
-          },
-          "borderColor": "teal",
-          "borderWidth": {
-            "$numberInt": "3"
-          },
-          "borderType": "solid",
-          "fillColor": "teal",
-          "data": {
-            "colormapReverse": false,
-            "numOfBins": {
-              "$numberInt": "72"
-            },
-            "colormap": "portland"
-          }
-        },
-        "label": "US House Districts",
-        "shortlabel": "US House",
-        "boundingGEO": "State",
-        "visible": true,
-        "selected": false,
-        "priority": {
-          "$numberDouble": "6.0"
-        }
-      },
-      "gazcta": {
-        "style": {
-          "opacity": {
-            "$numberDouble": "0.8"
-          },
-          "borderColor": "teal",
-          "borderWidth": {
-            "$numberInt": "3"
-          },
-          "borderType": "solid",
-          "fillColor": "teal",
-          "data": {
-            "colormapReverse": false,
-            "numOfBins": {
-              "$numberInt": "72"
-            },
-            "colormap": "portland"
-          }
-        },
-        "label": "Georgia Zip Code Tabulation Areas (ZCTA)",
-        "shortlabel": "ZCTAs",
-        "boundingGEO": "State",
-        "visible": true,
-        "selected": false,
-        "priority": {
-          "$numberDouble": "8.0"
-        }
-      },
-      "arczcta": {
-        "style": {
-          "opacity": {
-            "$numberDouble": "0.8"
-          },
-          "borderColor": "teal",
-          "borderWidth": {
-            "$numberInt": "3"
-          },
-          "borderType": "solid",
-          "fillColor": "teal",
-          "data": {
-            "colormapReverse": false,
-            "numOfBins": {
-              "$numberInt": "72"
-            },
-            "colormap": "portland"
-          }
-        },
-        "label": "ARC Zip Code Tabulation Areas (ZCTA)",
-        "shortlabel": "ARC ZCTAs",
-        "boundingGEO": "State",
-        "visible": true,
-        "selected": false,
-        "priority": {
-          "$numberDouble": "8.0"
-        }
-      },
-      "coansa": {
-        "style": {
-          "opacity": {
-            "$numberDouble": "0.8"
-          },
-          "borderColor": "teal",
-          "borderWidth": {
-            "$numberInt": "3"
-          },
-          "borderType": "solid",
-          "fillColor": "teal",
-          "data": {
-            "colormapReverse": false,
-            "numOfBins": {
-              "$numberInt": "72"
-            },
-            "colormap": "portland"
-          }
-        },
-        "label": "City of Atlanta's Neighborhood Statistical Areas (NSAs)",
-        "shortlabel": "NSAs",
-        "boundingGEO": "Atlanta",
-        "visible": true,
-        "selected": false,
-        "priority": {
-          "$numberDouble": "12.0"
-        }
-      },
-      "coanpu": {
-        "style": {
-          "opacity": {
-            "$numberDouble": "0.8"
-          },
-          "borderColor": "teal",
-          "borderWidth": {
-            "$numberInt": "3"
-          },
-          "borderType": "solid",
-          "fillColor": "teal",
-          "data": {
-            "colormapReverse": false,
-            "numOfBins": {
-              "$numberInt": "72"
-            },
-            "colormap": "portland"
-          }
-        },
-        "label": "City of Atlanta's Neighborhood Planning Units (NPUs)",
-        "shortlabel": "NPUs",
-        "boundingGEO": "Atlanta",
-        "visible": true,
-        "selected": false,
-        "priority": {
-          "$numberDouble": "11.0"
-        }
-      },
-      "arctracts": {
-        "style": {
-          "opacity": {
-            "$numberDouble": "0.8"
-          },
-          "borderColor": "#777777",
-          "borderWidth": {
-            "$numberInt": "1"
-          },
-          "borderType": "solid",
-          "fillColor": "teal",
-          "data": {
-            "colormapReverse": false,
-            "numOfBins": {
-              "$numberInt": "72"
-            },
-            "colormap": "portland"
-          }
-        },
-        "label": "ARC Census Tracts",
-        "shortlabel": "ARC Census Tracts",
-        "boundingGEO": "state",
-        "visible": true,
-        "selected": false,
-        "priority": {
-          "$numberDouble": "10.0"
-        }
-      },
-      "gatracts": {
-        "style": {
-          "opacity": {
-            "$numberDouble": "0.8"
-          },
-          "borderColor": "#777777",
-          "borderWidth": {
-            "$numberInt": "1"
-          },
-          "borderType": "solid",
-          "fillColor": "teal",
-          "data": {
-            "colormapReverse": false,
-            "numOfBins": {
-              "$numberInt": "72"
-            },
-            "colormap": "portland"
-          }
-        },
-        "label": "Georgia Census Tracts",
-        "shortlabel": "Census Tracts",
-        "boundingGEO": "state",
-        "visible": true,
-        "selected": true,
-        "priority": {
-          "$numberDouble": "10.0"
-        }
-      },
-      "gasenate": {
-        "style": {
-          "opacity": {
-            "$numberDouble": "0.8"
-          },
-          "borderColor": "teal",
-          "borderWidth": {
-            "$numberInt": "3"
-          },
-          "borderType": "solid",
-          "fillColor": "teal",
-          "data": {
-            "colormapReverse": false,
-            "numOfBins": {
-              "$numberInt": "72"
-            },
-            "colormap": "portland"
-          }
-        },
-        "label": "Georgia Senate Districts",
-        "shortlabel": "State Senate",
-        "boundingGEO": "state",
-        "visible": true,
-        "selected": false,
-        "priority": {
-          "$numberDouble": "2.0"
-        }
-      },
-      "gahouse": {
-        "style": {
-          "opacity": {
-            "$numberDouble": "0.8"
-          },
-          "borderColor": "teal",
-          "borderWidth": {
-            "$numberInt": "3"
-          },
-          "borderType": "solid",
-          "fillColor": "teal",
-          "data": {
-            "colormapReverse": false,
-            "numOfBins": {
-              "$numberInt": "72"
-            },
-            "colormap": "portland"
-          }
-        },
-        "label": "Georgia House Districts",
-        "shortlabel": "State House",
-        "boundingGEO": "state",
-        "visible": false,
-        "selected": false,
-        "priority": {
-          "$numberDouble": "3.0"
-        }
-      },
-      "cities": {
-        "style": {
-          "opacity": {
-            "$numberDouble": "0.7"
-          },
-          "borderColor": "blue",
-          "borderWidth": {
-            "$numberInt": "1"
-          },
-          "borderType": "solid",
-          "fillColor": "blue",
-          "data": {
-            "colormapReverse": false,
-            "numOfBins": {
-              "$numberInt": "72"
-            },
-            "colormap": "portland"
-          }
-        },
-        "label": "Georgia Cities",
-        "shortlabel": "Cities",
-        "boundingGEO": "state",
-        "visible": true,
-        "selected": true,
-        "priority": {
-          "$numberDouble": "4.0"
-        }
-      },
-      "counties": {
-        "style": {
-          "opacity": {
-            "$numberDouble": "0.8"
-          },
-          "borderColor": "black",
-          "borderWidth": {
-            "$numberInt": "3"
-          },
-          "borderType": "solid",
-          "fillColor": "grey",
-          "data": {
-            "colormapReverse": false,
-            "numOfBins": {
-              "$numberInt": "72"
-            },
-            "colormap": "portland"
-          }
-        },
-        "label": "Georgia Counties",
-        "shortlabel": "Counties",
-        "boundingGEO": "state",
-        "visible": true,
-        "selected": true,
-        "priority": {
-          "$numberDouble": "3.0"
-        }
-      },
-      "state": {
-        "style": {
-          "opacity": {
-            "$numberDouble": "0.8"
-          },
-          "borderColor": "teal",
-          "borderWidth": {
-            "$numberInt": "3"
-          },
-          "borderType": "solid",
-          "fillColor": "teal",
-          "data": {
-            "colormapReverse": false,
-            "numOfBins": {
-              "$numberInt": "72"
-            },
-            "colormap": "portland"
-          }
-        },
-        "label": "State of Georgia",
-        "shortlabel": "Georgia",
-        "boundingGEO": "state",
-        "visible": true,
-        "selected": false,
-        "priority": {
-          "$numberDouble": "1.0"
-        }
-      },
-      "ga-schools-2019": {
-        "style": {
-          "opacity": {
-            "$numberDouble": "0.8"
-          },
-          "borderColor": "black",
-          "borderWidth": {
-            "$numberInt": "1"
-          },
-          "borderType": "solid",
-          "fillColor": "teal",
-          "pointRadius": {
-            "$numberInt": "8"
-          },
-          "data": {
-            "colormapReverse": false,
-            "numOfBins": {
-              "$numberInt": "72"
-            },
-            "colormap": "portland"
-          }
-        },
-        "label": "Georgia Schools, SY2019",
-        "shortlabel": "Schools SY2019",
-        "boundingGEO": "state",
-        "visible": true,
-        "selected": false,
-        "priority": {
-          "$numberDouble": "1.0"
-        }
-      }
-    },
-    "charts": {
-      "info": {
-        "semanticIcon": null,
-        "materialIcon": "info",
-        "selected": false,
-        "available": false
-      },
-      "histogram": {
-        "semanticIcon": null,
-        "materialIcon": "bar_chart",
-        "xaxis": true,
-        "yaxis": true,
-        "selected": false,
-        "available": false
-      },
-      "scatterplot": {
-        "semanticIcon": null,
-        "materialIcon": "scatter_plot",
-        "xaxis": true,
-        "yaxis": true,
-        "selected": false,
-        "available": true
-      }
-    },
-    "table": {
-      "open": false
-    },
-    "layerlist": {
-      "open": false
-    }
-  }
+	"geoAPIs": [
+		"state",
+		"counties",
+		"gazcta",
+		"cities",
+		"gahouse",
+		"gasenate",
+		"gatracts",
+		"coanpu",
+		"coansa",
+		"uscongress",
+		"rc",
+		"superdistrict",
+		"ga-schools-2019",
+		"arctracts",
+		"arczcta"
+	],
+	"dataAPIs": [
+		"ACSAllGeo2017-0",
+		"ACSAllGeo2017-1",
+		"ACSAllGeo2017-2",
+		"ACSAllGeo2017-3",
+		"ACSAllGeo2017-4",
+		"ACSAllGeo2017-5",
+		"ACSAllGeo2017-6",
+		"ACSAllGeo2017-7",
+		"ACSAllGeo2018-0",
+		"ACSAllGeo2018-1",
+		"ACSAllGeo2018-2",
+		"ACSAllGeo2018-3",
+		"ACSAllGeo2018-4",
+		"ACSAllGeo2018-5",
+		"ACSAllGeo2018-6",
+		"ACSAllGeo2018-7",
+		"ACSAllGeo2018-8",
+		"ACSAllGeo2018-9",
+		"GA_Schools_2019",
+		"JobFlows_LEHD_2010_2017",
+		"Maternal_Health_2008_18",
+		"School_By_Tract_18_19"
+	],
+	"tileLayers": [
+		"tile-layer-color",
+		"tile-arcgis-grey",
+		"tile-arcgis-satellite",
+		"tile-arcgis-color",
+		"tile-natgeo",
+		"tile-layer-dark"
+	],
+	"name": "default",
+	"style": {
+		"colorPalette": ["#ffb3ba", "#ffdfba", "#ffffba", "#baffc9", "#bae1ff"],
+		"header": {
+			"logoUrl": "https://neighborhoodnexus.org/wp-content/uploads/2020/05/neighborhood-nexus-logo-sticky-2x-2.png"
+		},
+		"footer": {
+			"bgUrl": "https://www.transparenttextures.com/patterns/diagmonds-light.png",
+			"logoUrl": "https://neighborhoodnexus.org/wp-content/uploads/2016/04/neighborhood-nexus-logo.png",
+			"bgcolor": "#EDF3F1"
+		},
+		"tabbedboxes": {
+			"bgcolor2": "lightgrey",
+			"bgcolor1": "lightgrey"
+		},
+		"navbar": {
+			"bgUrl": "https://www.transparenttextures.com/patterns/diagmonds-light.png",
+			"logoUrl": "https://via.placeholder.com/300x40.png?text=Logo+Goes+Here",
+			"bgcolor": "#EDF3F1"
+		},
+		"mainwrapper": {
+			"bgcolor": null
+		},
+		"global": {
+			"borderradius": "10px"
+		}
+	},
+	"states": {
+		"map": {
+			"center": null,
+			"zoom": null
+		},
+		"layers": {
+			"rc": {
+				"style": {
+					"opacity": {
+						"numberDouble": "0.8"
+					},
+					"borderColor": "teal",
+					"borderWidth": {
+						"numberInt": "3"
+					},
+					"borderType": "solid",
+					"fillColor": "teal",
+					"data": {
+						"colormapReverse": false,
+						"numOfBins": {
+							"numberInt": "72"
+						},
+						"colormap": "portland"
+					}
+				},
+				"label": "Georgia Regional Commissions",
+				"shortlabel": "RCs",
+				"boundingGEO": "State",
+				"visible": true,
+				"selected": false,
+				"priority": {
+					"numberDouble": "2.0"
+				}
+			},
+			"superdistrict": {
+				"style": {
+					"opacity": {
+						"numberDouble": "0.8"
+					},
+					"borderColor": "teal",
+					"borderWidth": {
+						"numberInt": "3"
+					},
+					"borderType": "solid",
+					"fillColor": "teal",
+					"data": {
+						"colormapReverse": false,
+						"numOfBins": {
+							"numberInt": "72"
+						},
+						"colormap": "portland"
+					}
+				},
+				"label": "Super Districts",
+				"shortlabel": "SDs",
+				"boundingGEO": "State",
+				"visible": true,
+				"priority": {
+					"numberDouble": "7.0"
+				},
+				"selected": false
+			},
+			"uscongress": {
+				"style": {
+					"opacity": {
+						"numberDouble": "0.8"
+					},
+					"borderColor": "teal",
+					"borderWidth": {
+						"numberInt": "3"
+					},
+					"borderType": "solid",
+					"fillColor": "teal",
+					"data": {
+						"colormapReverse": false,
+						"numOfBins": {
+							"numberInt": "72"
+						},
+						"colormap": "portland"
+					}
+				},
+				"label": "US House Districts",
+				"shortlabel": "US House",
+				"boundingGEO": "State",
+				"visible": true,
+				"selected": false,
+				"priority": {
+					"numberDouble": "6.0"
+				}
+			},
+			"gazcta": {
+				"style": {
+					"opacity": {
+						"numberDouble": "0.8"
+					},
+					"borderColor": "teal",
+					"borderWidth": {
+						"numberInt": "3"
+					},
+					"borderType": "solid",
+					"fillColor": "teal",
+					"data": {
+						"colormapReverse": false,
+						"numOfBins": {
+							"numberInt": "72"
+						},
+						"colormap": "portland"
+					}
+				},
+				"label": "Georgia Zip Code Tabulation Areas (ZCTA)",
+				"shortlabel": "ZCTAs",
+				"boundingGEO": "State",
+				"visible": true,
+				"selected": false,
+				"priority": {
+					"numberDouble": "8.0"
+				}
+			},
+			"arczcta": {
+				"style": {
+					"opacity": {
+						"numberDouble": "0.8"
+					},
+					"borderColor": "teal",
+					"borderWidth": {
+						"numberInt": "3"
+					},
+					"borderType": "solid",
+					"fillColor": "teal",
+					"data": {
+						"colormapReverse": false,
+						"numOfBins": {
+							"numberInt": "72"
+						},
+						"colormap": "portland"
+					}
+				},
+				"label": "ARC Zip Code Tabulation Areas (ZCTA)",
+				"shortlabel": "ARC ZCTAs",
+				"boundingGEO": "State",
+				"visible": true,
+				"selected": false,
+				"priority": {
+					"numberDouble": "8.0"
+				}
+			},
+			"coansa": {
+				"style": {
+					"opacity": {
+						"numberDouble": "0.8"
+					},
+					"borderColor": "teal",
+					"borderWidth": {
+						"numberInt": "3"
+					},
+					"borderType": "solid",
+					"fillColor": "teal",
+					"data": {
+						"colormapReverse": false,
+						"numOfBins": {
+							"numberInt": "72"
+						},
+						"colormap": "portland"
+					}
+				},
+				"label": "City of Atlanta's Neighborhood Statistical Areas (NSAs)",
+				"shortlabel": "NSAs",
+				"boundingGEO": "Atlanta",
+				"visible": true,
+				"selected": false,
+				"priority": {
+					"numberDouble": "12.0"
+				}
+			},
+			"coanpu": {
+				"style": {
+					"opacity": {
+						"numberDouble": "0.8"
+					},
+					"borderColor": "teal",
+					"borderWidth": {
+						"numberInt": "3"
+					},
+					"borderType": "solid",
+					"fillColor": "teal",
+					"data": {
+						"colormapReverse": false,
+						"numOfBins": {
+							"numberInt": "72"
+						},
+						"colormap": "portland"
+					}
+				},
+				"label": "City of Atlanta's Neighborhood Planning Units (NPUs)",
+				"shortlabel": "NPUs",
+				"boundingGEO": "Atlanta",
+				"visible": true,
+				"selected": false,
+				"priority": {
+					"numberDouble": "11.0"
+				}
+			},
+			"arctracts": {
+				"style": {
+					"opacity": {
+						"numberDouble": "0.8"
+					},
+					"borderColor": "#777777",
+					"borderWidth": {
+						"numberInt": "1"
+					},
+					"borderType": "solid",
+					"fillColor": "teal",
+					"data": {
+						"colormapReverse": false,
+						"numOfBins": {
+							"numberInt": "72"
+						},
+						"colormap": "portland"
+					}
+				},
+				"label": "ARC Census Tracts",
+				"shortlabel": "ARC Census Tracts",
+				"boundingGEO": "state",
+				"visible": true,
+				"selected": false,
+				"priority": {
+					"numberDouble": "10.0"
+				}
+			},
+			"gatracts": {
+				"style": {
+					"opacity": {
+						"numberDouble": "0.8"
+					},
+					"borderColor": "#777777",
+					"borderWidth": {
+						"numberInt": "1"
+					},
+					"borderType": "solid",
+					"fillColor": "teal",
+					"data": {
+						"colormapReverse": false,
+						"numOfBins": {
+							"numberInt": "72"
+						},
+						"colormap": "portland"
+					}
+				},
+				"label": "Georgia Census Tracts",
+				"shortlabel": "Census Tracts",
+				"boundingGEO": "state",
+				"visible": true,
+				"selected": true,
+				"priority": {
+					"numberDouble": "10.0"
+				}
+			},
+			"gasenate": {
+				"style": {
+					"opacity": {
+						"numberDouble": "0.8"
+					},
+					"borderColor": "teal",
+					"borderWidth": {
+						"numberInt": "3"
+					},
+					"borderType": "solid",
+					"fillColor": "teal",
+					"data": {
+						"colormapReverse": false,
+						"numOfBins": {
+							"numberInt": "72"
+						},
+						"colormap": "portland"
+					}
+				},
+				"label": "Georgia Senate Districts",
+				"shortlabel": "State Senate",
+				"boundingGEO": "state",
+				"visible": true,
+				"selected": false,
+				"priority": {
+					"numberDouble": "2.0"
+				}
+			},
+			"gahouse": {
+				"style": {
+					"opacity": {
+						"numberDouble": "0.8"
+					},
+					"borderColor": "teal",
+					"borderWidth": {
+						"numberInt": "3"
+					},
+					"borderType": "solid",
+					"fillColor": "teal",
+					"data": {
+						"colormapReverse": false,
+						"numOfBins": {
+							"numberInt": "72"
+						},
+						"colormap": "portland"
+					}
+				},
+				"label": "Georgia House Districts",
+				"shortlabel": "State House",
+				"boundingGEO": "state",
+				"visible": false,
+				"selected": false,
+				"priority": {
+					"numberDouble": "3.0"
+				}
+			},
+			"cities": {
+				"style": {
+					"opacity": {
+						"numberDouble": "0.7"
+					},
+					"borderColor": "blue",
+					"borderWidth": {
+						"numberInt": "1"
+					},
+					"borderType": "solid",
+					"fillColor": "blue",
+					"data": {
+						"colormapReverse": false,
+						"numOfBins": {
+							"numberInt": "72"
+						},
+						"colormap": "portland"
+					}
+				},
+				"label": "Georgia Cities",
+				"shortlabel": "Cities",
+				"boundingGEO": "state",
+				"visible": true,
+				"selected": true,
+				"priority": {
+					"numberDouble": "4.0"
+				}
+			},
+			"counties": {
+				"style": {
+					"opacity": {
+						"numberDouble": "0.8"
+					},
+					"borderColor": "black",
+					"borderWidth": {
+						"numberInt": "3"
+					},
+					"borderType": "solid",
+					"fillColor": "grey",
+					"data": {
+						"colormapReverse": false,
+						"numOfBins": {
+							"numberInt": "72"
+						},
+						"colormap": "portland"
+					}
+				},
+				"label": "Georgia Counties",
+				"shortlabel": "Counties",
+				"boundingGEO": "state",
+				"visible": true,
+				"selected": true,
+				"priority": {
+					"numberDouble": "3.0"
+				}
+			},
+			"state": {
+				"style": {
+					"opacity": {
+						"numberDouble": "0.8"
+					},
+					"borderColor": "teal",
+					"borderWidth": {
+						"numberInt": "3"
+					},
+					"borderType": "solid",
+					"fillColor": "teal",
+					"data": {
+						"colormapReverse": false,
+						"numOfBins": {
+							"numberInt": "72"
+						},
+						"colormap": "portland"
+					}
+				},
+				"label": "State of Georgia",
+				"shortlabel": "Georgia",
+				"boundingGEO": "state",
+				"visible": true,
+				"selected": false,
+				"priority": {
+					"numberDouble": "1.0"
+				}
+			},
+			"ga-schools-2019": {
+				"style": {
+					"opacity": {
+						"numberDouble": "0.8"
+					},
+					"borderColor": "black",
+					"borderWidth": {
+						"numberInt": "1"
+					},
+					"borderType": "solid",
+					"fillColor": "teal",
+					"pointRadius": {
+						"numberInt": "8"
+					},
+					"data": {
+						"colormapReverse": false,
+						"numOfBins": {
+							"numberInt": "72"
+						},
+						"colormap": "portland"
+					}
+				},
+				"label": "Georgia Schools, SY2019",
+				"shortlabel": "Schools SY2019",
+				"boundingGEO": "state",
+				"visible": true,
+				"selected": false,
+				"priority": {
+					"numberDouble": "1.0"
+				}
+			}
+		},
+		"charts": {
+			"info": {
+				"semanticIcon": null,
+				"materialIcon": "info",
+				"selected": false,
+				"available": false
+			},
+			"histogram": {
+				"semanticIcon": null,
+				"materialIcon": "bar_chart",
+				"xaxis": true,
+				"yaxis": true,
+				"selected": false,
+				"available": false
+			},
+			"scatterplot": {
+				"semanticIcon": null,
+				"materialIcon": "scatter_plot",
+				"xaxis": true,
+				"yaxis": true,
+				"selected": false,
+				"available": true
+			}
+		},
+		"table": {
+			"open": false
+		},
+		"layerlist": {
+			"open": false
+		}
+	}
 }
