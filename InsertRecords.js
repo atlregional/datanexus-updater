@@ -1,4 +1,4 @@
-require("dotenv");
+require("dotenv").config();
 const mongoose = require("mongoose");
 const db = require("./models");
 const handleNoArgs = require("./utils/handleNoArgs");
@@ -30,7 +30,6 @@ const addData = async (collection, directory, file) => {
     })
     .catch((err) => {
       throw err;
-      process.exit(1);
     });
 };
 
