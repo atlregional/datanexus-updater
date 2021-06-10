@@ -36,7 +36,10 @@ const getStatsByGeo = async (defaultDataAPIs, geo) => {
 	}
 
 	const indicatorArr = await db.dataManifest.find(query).then(dbModel => {
-		return dbModel.filter(item => apiFields[item.API].includes(item.Variable));
+		return dbModel.filter(
+			item =>
+				apiFields[item.API].includes(item.Variable) && item.ESTMOE !== 'MOE'
+		);
 	});
 
 	const sources = {};
@@ -68,19 +71,19 @@ const getStatsByGeo = async (defaultDataAPIs, geo) => {
 const init = async configName => {
 	try {
 		if (!configName) throw new Error('No config name arg');
-		const defaultConfig = await db.defaultConfig.findOne({ name: configName });
+		const config = await db.defaultConfig.findOne({ name: configName });
 		console.log('Config fetched.');
 
-		for await (const geo of defaultConfig.geoAPIs) {
-			const statObj = await getStatsByGeo(defaultConfig.dataAPIs, geo);
+		for await (const geo of config.geoAPIs) {
+			const statObj = await getStatsByGeo(config.dataAPIs, geo);
 
-			defaultConfig.states.layers[geo].stats = statObj;
+			config.states.layers[geo].stats = statObj;
 			console.log(geo, 'complete.');
 		}
 		console.log('Updating Config...');
 
 		await db.defaultConfig
-			.findOneAndUpdate({ name: configName }, { states: defaultConfig.states })
+			.findOneAndUpdate({ name: configName }, { states: config.states })
 			.then(() => {
 				console.log('Config updated.');
 				process.exit(0);
