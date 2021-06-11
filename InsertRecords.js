@@ -11,7 +11,12 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.log("\nConnected to DB."))
+  .then(() => {
+    console.log("\nConnected to DB.")
+    process.argv[2] && process.argv[3] && process.argv[4]
+      ? addData(process.argv[2], process.argv[3], process.argv[4])
+      : handleNoArgs();
+  })
   .catch((err) => {
     console.log(err);
     process.exit(1);
@@ -26,14 +31,15 @@ const addData = async (collection, directory, file) => {
     .insertMany(newData)
     .then(() => {
       console.log(`${directory} records succesfully updated`);
-      process.exit(1);
+      process.exit(0);
     })
     .catch((err) => {
-      throw err;
+      console.log(err);
+      process.exit(1);
     });
 };
 
 // arg2: collection to update, arg3: directory, arg4: file
-process.argv[2] && process.argv[3] && process.argv[4]
-  ? addData(process.argv[2], process.argv[3], process.argv[4])
-  : handleNoArgs();
+// process.argv[2] && process.argv[3] && process.argv[4]
+//   ? addData(process.argv[2], process.argv[3], process.argv[4])
+//   : handleNoArgs();

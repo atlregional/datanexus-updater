@@ -1,0 +1,167 @@
+{
+  "geoAPIs": [
+    "counties",
+    "cities",
+    "gatracts"
+  ],
+  "dataAPIs": [
+    "ACSAllGeo2019-Change2000",
+    "ACSAllGeo2019-Change2010",
+    "ACSAllGeo2019-Economic",
+    "ACSAllGeo2019-Demographic",
+    "ACSAllGeo2019-Social",
+    "ACSAllGeo2019-Housing",
+    "ACSAllGeo2019-RaceEconomic",
+    "ACSAllGeo2019-RaceDemographic",
+    "ACSAllGeo2019-RaceSocial",
+    "ACSAllGeo2019-RaceHousing"
+  ],
+  "tileLayers": [
+    "tile-layer-color",
+    "tile-arcgis-grey",
+    "tile-arcgis-satellite"
+  ],
+  "name": "geears",
+  "style": {
+    "colorPalette": [
+      "#ffb3ba",
+      "#ffdfba",
+      "#ffffba",
+      "#baffc9",
+      "#bae1ff"
+    ],
+    "header": {
+      "logoUrl": "https://geears.org/wp-content/themes/geears-seventeen/assets/images/logo.png"
+    },
+    "footer": {
+      "bgUrl": "https://www.transparenttextures.com/patterns/diagmonds-light.png",
+      "logoUrl": "https://neighborhoodnexus.org/wp-content/uploads/2016/04/neighborhood-nexus-logo.png",
+      "bgcolor": "#EDF3F1",
+      "logoLinkUrl": "https://neighborhoodnexus.org/"
+    },
+    "tabbedboxes": {
+      "bgcolor2": "lightgrey",
+      "bgcolor1": "lightgrey"
+    },
+    "navbar": {
+      "bgUrl": "https://www.transparenttextures.com/patterns/diagmonds-light.png",
+      "logoUrl": "https://via.placeholder.com/300x40.png?text=Logo+Goes+Here",
+      "bgcolor": "#FFF"
+    },
+    "mainwrapper": {
+      "bgcolor": null
+    },
+    "global": {
+      "borderradius": "10px"
+    }
+  },
+  "states": {
+    "map": {
+      "center": null,
+      "zoom": null
+    },
+    "layers": {
+      "gatracts": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "#777777",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Census Tracts",
+        "shortlabel": "Census Tracts",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": true,
+        "priority": 10
+      },
+      "cities": {
+        "style": {
+          "opacity": 0.7,
+          "borderColor": "blue",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "blue",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Cities",
+        "shortlabel": "Cities",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": true,
+        "priority": 4
+      },
+      "counties": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "black",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "grey",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Counties",
+        "shortlabel": "Counties",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": true,
+        "priority": 3
+      }
+    },
+    "tutorials": [
+      {
+        "title": "Getting Started",
+        "description": "In this brief tutorial you will learn how to add layers, add data to layers, visualize that data on a map, and then share the results.",
+        "url": "https://www.youtube.com/embed/tAKfUVb0F70/"
+      },
+      {
+        "title": "Customizing Your Maps",
+        "description": "In this tutorial, you will learn how to customize how your map looks.",
+        "url": "https://www.youtube.com/embed/FE3YhMY6su4"
+      }
+    ],
+    "splash": {
+      "header": {
+        "main": "Welcome to the GEEARS Data Explorer Tool",
+        "sub": "Turning information into world domination!!"
+      },
+      "body": [
+        {
+          "title": "Why are you here?",
+          "text": "This tool will help you change the world!"
+        }
+      ]
+    },
+    "charts": {
+      "open": true,
+      "scatterplot": {
+        "semanticIcon": null,
+        "materialIcon": "scatter_plot",
+        "xaxis": true,
+        "yaxis": true,
+        "selected": false,
+        "available": true
+      }
+    },
+    "table": {
+      "open": false
+    },
+    "layerlist": {
+      "open": false
+    }
+  }
+}]

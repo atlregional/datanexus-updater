@@ -1,0 +1,56 @@
+[
+  {
+    "_id": "ga-elem-schools-2019",
+    "constructedURL": true,
+    "url": "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/Schools_in_the_State_of_Georgia_2019/FeatureServer/0",
+    "source": "ARC OpenData",
+    "currentAsOf": "3/9/2021",
+    "geoField": "Type",
+    "geoQuery": "Elementary School",
+    "joinField": "SysSchool",
+    "otherFields": ["SchoolName", "Type", "GradeRange", "SystemName", "SchoolCity"],
+    "filters": {},
+    "type": "Point",
+    "boundingGEO": "State",
+    "label": "Elementary Schools, SY2019",
+    "dataAPIs" : [ 
+        "GA_Elem_Schools_2019" 
+    ]
+  },
+  {
+    "_id": "ga-middle-schools-2019",
+    "constructedURL": true,
+    "url": "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/Schools_in_the_State_of_Georgia_2019/FeatureServer/0",
+    "source": "ARC OpenData",
+    "currentAsOf": "3/9/2021",
+    "geoField": "Type",
+    "geoQuery": "Middle School",
+    "joinField": "SysSchool",
+    "otherFields": ["SchoolName", "Type", "GradeRange", "SystemName", "SchoolCity"],
+    "filters": {},
+    "type": "Point",
+    "boundingGEO": "State",
+    "label": "Middle Schools, SY2019",
+    "dataAPIs" : [ 
+        "GA_Middle_Schools_2019" 
+    ]
+  },
+  {
+    "_id": "ga-high-schools-2019",
+    "constructedURL": true,
+    "url": "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/Schools_in_the_State_of_Georgia_2019/FeatureServer/0",
+    "source": "ARC OpenData",
+    "currentAsOf": "3/9/2021",
+    "geoField": "Type",
+    "geoQuery": "High School",
+    "joinField": "SysSchool",
+    "otherFields": ["SchoolName", "Type", "GradeRange", "SystemName", "SchoolCity"],
+    "filters": {},
+    "type": "Point",
+    "boundingGEO": "State",
+    "label": "High Schools, SY2019",
+    "dataAPIs" : [ 
+        "GA_High_Schools_2019" 
+    ]
+  }
+]

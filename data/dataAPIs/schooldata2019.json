@@ -1,0 +1,10 @@
+[
+  {
+    "_id" : "GA_High_Schools_2019",
+    "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/Schools_in_the_State_of_Georgia_2019/FeatureServer/0",
+    "type" : "REST",
+    "source": "ARC OpenData",
+    "geoField": "Type",
+    "joinField": "SysSchool"
+  }
+]
