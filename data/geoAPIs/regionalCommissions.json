@@ -1,0 +1,20 @@
+[{
+  "_id": "rc2021",
+  "otherFields": [
+    "NAME"
+  ],
+  "dataAPIs": [
+    
+  ],
+  "preFilters": [],
+  "constructedURL": true,
+  "url": "",
+  "source": "ARC OpenData",
+  "currentAsOf": "",
+  "geoField": "SumLevel",
+  "geoQuery": "RC",
+  "joinField": "GEOID",
+  "type": "Polygon",
+  "boundingGEO": "State",
+  "label": "Regional Commissions - NEW"
+}]

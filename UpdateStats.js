@@ -38,7 +38,10 @@ const getStatsByGeo = async (defaultDataAPIs, geo) => {
 	const indicatorArr = await db.dataManifest.find(query).then(dbModel => {
 		return dbModel.filter(
 			item =>
-				apiFields[item.API].includes(item.Variable) && item.ESTMOE !== 'MOE'
+				apiFields[item.API].includes(item.Variable) && 
+        item.ESTMOE !== 'MOE' &&
+        item.Type !== 'Flag' &&
+        item.Type !== 'Text'
 		);
 	});
 
