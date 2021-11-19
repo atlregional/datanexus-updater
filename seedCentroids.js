@@ -1,6 +1,6 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
-const db = require('../models');
+const db = require('./models');
 const axios = require('axios');
 const turf = require('@turf/turf');
 
@@ -27,15 +27,19 @@ const constructURL = api => {
 		: api.url;
 };
 
-const calculateCentroid = async geometry => {
+const calculateCentroid = async (geometry, test) => {
 	switch (geometry.type) {
 		case 'Point':
 			// Reversing coordinates on all returns for Leaflet config
 			return [geometry.coordinates[1], geometry.coordinates[0]];
 		case 'Polygon':
 			if (geometry.coordinates[0]) {
-				const centroid = turf.centroid(geometry);
-				return [centroid.geometry.coordinates[1], centroid.geometry.coordinates[0]];
+				const centroid = turf.centerOfMass(geometry);
+
+				return [
+					centroid.geometry.coordinates[1],
+					centroid.geometry.coordinates[0]
+				];
 			}
 			return [];
 		case 'MultiPolygon':
@@ -46,8 +50,12 @@ const calculateCentroid = async geometry => {
 						return { area: turf.area(polygon), polygon: polygon };
 					})
 					.sort((a, b) => b.area - a.area);
-				const centroidB = turf.centroid(areaArr[0].polygon);
-				return [centroidB.geometry.coordinates[1], centroidB.geometry.coordinates[0]];
+
+				const centroid = turf.centerOfMass(areaArr[0].polygon);
+				return [
+					centroid.geometry.coordinates[1],
+					centroid.geometry.coordinates[0]
+				];
 			}
 			return [];
 		default:
@@ -69,7 +77,10 @@ const getCentroids = async () => {
 		obj.centroids = {};
 
 		for await (const feature of data.features) {
-			const centroid = await calculateCentroid(feature.geometry);
+			const centroid = await calculateCentroid(
+				feature.geometry,
+				feature.properties
+			);
 			obj.centroids[
 				`${feature.properties[api.joinField]}`.replace(/[.]/g, '')
 			] = centroid;
