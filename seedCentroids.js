@@ -4,6 +4,8 @@ const db = require('./models');
 const axios = require('axios');
 const turf = require('@turf/turf');
 
+const query={_id: 'zcta2020'}
+
 const constructURL = api => {
 	const outFields = api.otherFields;
 	outFields.push(api.joinField);
@@ -63,9 +65,9 @@ const calculateCentroid = async (geometry, test) => {
 	}
 };
 
-const getCentroids = async () => {
+const getCentroids = async query => {
 	const arr = [];
-	const geoAPIs = await db.geoAPI.find({});
+	const geoAPIs = await db.geoAPI.find(query || {});
 
 	for await (const api of geoAPIs) {
 		const url = constructURL(api);
@@ -91,8 +93,8 @@ const getCentroids = async () => {
 	return arr;
 };
 
-const runSeed = async () => {
-	const centroidsArr = await getCentroids();
+const runSeed = async query => {
+	const centroidsArr = await getCentroids(query);
 
 	await db.centroids
 		.deleteMany({})
@@ -119,7 +121,7 @@ mongoose
 	})
 	.then(async () => {
 		console.log('DB connected...');
-		await runSeed();
+		await runSeed(query);
 	})
 	.catch(err => {
 		console.log(err);
