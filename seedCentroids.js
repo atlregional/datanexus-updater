@@ -4,7 +4,7 @@ const db = require('./models');
 const axios = require('axios');
 const turf = require('@turf/turf');
 
-const query={_id: 'zcta2020'}
+const query= {}
 
 const constructURL = api => {
 	const outFields = api.otherFields;
@@ -69,10 +69,14 @@ const getCentroids = async query => {
 	const arr = [];
 	const geoAPIs = await db.geoAPI.find(query || {});
 
+  // console.log(geoAPIs);
+
 	for await (const api of geoAPIs) {
 		const url = constructURL(api);
 
 		const { data } = await axios.get(url);
+
+    // console.log(data);
 
 		const obj = {};
 		obj._id = api._id;
@@ -96,22 +100,27 @@ const getCentroids = async query => {
 const runSeed = async query => {
 	const centroidsArr = await getCentroids(query);
 
-	await db.centroids
-		.deleteMany({})
-		.then(() =>
+  // console.log(centroidsArr)
+
+	await 
+  // db.centroids
+	// 	.deleteMany({})
+	// 	.then(() =>
 			db.centroids
 				.insertMany(centroidsArr)
-				.then(() => console.log('Centroids updated!'))
+				.then(() => {
+          console.log('Centroids updated!');
+          process.exit(0);
+        })
 				.catch(err => {
 					console.log(err);
 					process.exit(1);
 				})
-		)
-		.catch(err => {
-			console.log(err);
-			process.exit(1);
-		});
-	process.exit(0);
+		// )
+		// .catch(err => {
+		// 	console.log(err);
+		// 	process.exit(1);
+		// });
 };
 
 mongoose
@@ -121,6 +130,7 @@ mongoose
 	})
 	.then(async () => {
 		console.log('DB connected...');
+    console.log(query);
 		await runSeed(query);
 	})
 	.catch(err => {
