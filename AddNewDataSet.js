@@ -49,9 +49,9 @@ const insertManifest = async (data) => {
     });
 };
 
-const updateDefaultConfig = async (newDataAPIKeys) => {
+const updateDefaultConfig = async (newDataAPIKeys, configName) => {
   await db.defaultConfig
-    .updateOne({ name: "default" }, { $push: { dataAPIs: newDataAPIKeys } })
+    .updateOne({ name: configName }, { $push: { dataAPIs: newDataAPIKeys } })
     .then((res) => {
       res.ok === 1
         ? console.log("\nSuccessfully Updated: defaultConfig.dataAPIs")
@@ -62,7 +62,7 @@ const updateDefaultConfig = async (newDataAPIKeys) => {
     });
 };
 
-const init = async (dataAPIsFile, manifestCSV, geosArr) => {
+const init = async (dataAPIsFile, manifestCSV, geosArr, configName) => {
   try {
     const newDataAPIs = require(`./data/dataAPIs/${dataAPIsFile}`);
     const manifestPath = `./data/manifests/${manifestCSV}`;
@@ -77,7 +77,7 @@ const init = async (dataAPIsFile, manifestCSV, geosArr) => {
 
     await insertManifest(newManifestJSON);
 
-    await updateDefaultConfig(newDataAPIKeys);
+    await updateDefaultConfig(newDataAPIKeys, configName);
   } catch (err) {
     console.log(err);
     process.exit(1);
@@ -86,6 +86,6 @@ const init = async (dataAPIsFile, manifestCSV, geosArr) => {
 
 // arg2: New DataAPI File, arg3: Manifest CSV, arg4: Array of GeoAPIs to update with newly added DataAPIs
 // arg4 should be an exported array located in the 'update' directory
-process.argv[2] && process.argv[3] && process.argv[4]
-  ? init(process.argv[2], process.argv[3], process.argv[4])
+process.argv[2] && process.argv[3] && process.argv[4] && process.argv[5]
+  ? init(process.argv[2], process.argv[3], process.argv[4], process.argv[5])
   : handleNoArgs();

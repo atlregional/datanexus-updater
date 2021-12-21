@@ -1,0 +1,10 @@
+[
+  {
+    "_id" : "JobFlows_LEHD_2010_2019",
+    "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/Job_Flows_2010_to_2019/FeatureServer/16",
+    "type" : "REST",
+    "source": "ARC OpenData",
+    "geoField": "SumLevel",
+    "joinField": "GEOID"
+  }
+]

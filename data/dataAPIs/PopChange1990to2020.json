@@ -1,0 +1,10 @@
+[
+  {
+    "_id" : "PopChange_1990to2020",
+    "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/Population_Change_Since_1990_in_2020_Geography/FeatureServer/13",
+    "type" : "REST",
+    "source": "ARC OpenData",
+    "geoField": "SUMLEV",
+    "joinField": "GEOID"    
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "_id" : "GEEARS_profile",
+    "url" : "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/ArcGIS/rest/services/geears_legislative_boundary_profile/FeatureServer/0",
+    "type" : "REST",
+    "source": "ARC OpenData",
+    "geoField": "SumLevel",
+    "joinField": "GEOID"    
+  }
+]

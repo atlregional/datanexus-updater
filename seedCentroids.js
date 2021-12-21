@@ -4,7 +4,7 @@ const db = require('./models');
 const axios = require('axios');
 const turf = require('@turf/turf');
 
-const query={_id: 'zcta2020'}
+const query={_id: 'greenspace'}
 
 const constructURL = api => {
 	const outFields = api.otherFields;
