@@ -1,0 +1,5679 @@
+[{
+  "_id": {
+    "$oid": "5f08ce5d05517725f2d65ace"
+  },
+  "geoAPIs": [
+    "state",
+    "counties",
+    "gazcta",
+    "gahouse",
+    "gasenate",
+    "gatracts",
+    "tract2020",
+    "coansa",
+    "coanpu",
+    "uscongress",
+    "rc",
+    "rc2021",
+    "cities",
+    "superdistrict",
+    "ga-elem-schools-2019",
+    "ga-middle-schools-2019",
+    "ga-high-schools-2019",
+    "library",
+    "greenspace"
+  ],
+  "dataAPIs": [
+    "ACSAllGeo2017-0",
+    "ACSAllGeo2017-1",
+    "ACSAllGeo2017-2",
+    "ACSAllGeo2017-3",
+    "ACSAllGeo2017-4",
+    "ACSAllGeo2017-5",
+    "ACSAllGeo2017-6",
+    "ACSAllGeo2017-7",
+    "ACSAllGeo2018-0",
+    "ACSAllGeo2018-1",
+    "ACSAllGeo2018-2",
+    "ACSAllGeo2018-3",
+    "ACSAllGeo2018-4",
+    "ACSAllGeo2018-5",
+    "ACSAllGeo2018-6",
+    "ACSAllGeo2018-7",
+    "ACSAllGeo2018-8",
+    "ACSAllGeo2018-9",
+    "GA_Elem_Schools_2019",
+    "GA_Middle_Schools_2019",
+    "GA_High_Schools_2019",
+    "JobFlows_LEHD_2010_2017",
+    "Maternal_Health_2008_18",
+    "School_By_Tract_18_19",
+    "ACSAllGeo2019-Change2000",
+    "ACSAllGeo2019-Change2010",
+    "ACSAllGeo2019-Economic",
+    "ACSAllGeo2019-Demographic",
+    "ACSAllGeo2019-Social",
+    "ACSAllGeo2019-Housing",
+    "ACSAllGeo2019-RaceEconomic",
+    "ACSAllGeo2019-RaceDemographic",
+    "ACSAllGeo2019-RaceSocial",
+    "ACSAllGeo2019-RaceHousing",
+    "Maternal_Health_Asthma_2015_19",
+    "JobFlows_LEHD_2010_2018",
+    "CACDS_2017_20",
+    "PopChange_Multi_Geos_2010_20",
+    "Asthma_2008_18",
+    "PopChange_1990to2020",
+    "JobFlows_LEHD_2010_2019"
+  ],
+  "tileLayers": [
+    "tile-layer-color",
+    "tile-arcgis-grey",
+    "tile-arcgis-satellite",
+    "tile-arcgis-color",
+    "tile-natgeo",
+    "tile-layer-dark"
+  ],
+  "name": "default",
+  "style": {
+    "colorPalette": [
+      "#ffb3ba",
+      "#ffdfba",
+      "#ffffba",
+      "#baffc9",
+      "#bae1ff"
+    ],
+    "header": {
+      "logoUrl": "https://neighborhoodnexus.org/wp-content/uploads/2020/05/neighborhood-nexus-logo-sticky-2x-2.png",
+      "text": "DataNexus"
+    },
+    "footer": {
+      "bgUrl": "https://www.transparenttextures.com/patterns/diagmonds-light.png",
+      "logoUrl": "https://neighborhoodnexus.org/wp-content/uploads/2016/04/neighborhood-nexus-logo.png",
+      "bgcolor": "#EDF3F1",
+      "logoLinkUrl": "https://neighborhoodnexus.org/"
+    },
+    "tabbedboxes": {
+      "bgcolor2": "lightgrey",
+      "bgcolor1": "lightgrey"
+    },
+    "navbar": {
+      "bgUrl": "https://www.transparenttextures.com/patterns/diagmonds-light.png",
+      "logoUrl": "https://via.placeholder.com/300x40.png?text=Logo+Goes+Here",
+      "bgcolor": "#EDF3F1"
+    },
+    "mainwrapper": {
+      "bgcolor": null
+    },
+    "global": {
+      "borderradius": "10px"
+    }
+  },
+  "states": {
+    "map": {
+      "center": [
+        33.765,
+        -84.4
+      ],
+      "zoom": 10
+    },
+    "layers": {
+      "rc": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Regional Commissions",
+        "shortlabel": "RCs",
+        "boundingGEO": "State",
+        "visible": true,
+        "selected": false,
+        "priority": 2,
+        "stats": {
+          "count": 3748,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3338
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 535
+            },
+            {
+              "name": "Economic",
+              "count": 935
+            },
+            {
+              "name": "Housing",
+              "count": 544
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            }
+          ]
+        }
+      },
+      "rc2021": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Regional Commissions (New)",
+        "shortlabel": "RCs (New)",
+        "boundingGEO": "State",
+        "visible": true,
+        "selected": false,
+        "priority": 2,
+        "stats": {
+          "count": 392,
+          "sources": [
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            },
+            {
+              "name": "US Decennial Census, 2020",
+              "count": 13
+            },
+            {
+              "name": "US Decennial Census, 2010 & 2020 (in 2020 Census Geographies)",
+              "count": 14
+            },
+            {
+              "name": "US Decennial Census, 2010 (in 2020 Census Geographies)",
+              "count": 13
+            }
+          ],
+          "categories": [
+            {
+              "name": "Economic",
+              "count": 66
+            },
+            {
+              "name": "Demographic",
+              "count": 248
+            },
+            {
+              "name": "Housing",
+              "count": 38
+            },
+            {
+              "name": "Demographics",
+              "count": 40
+            }
+          ]
+        }
+      },
+      "superdistrict": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Super Districts",
+        "shortlabel": "SDs",
+        "boundingGEO": "State",
+        "visible": true,
+        "priority": 7,
+        "selected": false,
+        "stats": {
+          "count": 4212,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3338
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "GA CACDS",
+              "count": 72
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            },
+            {
+              "name": "US Decennial Census, 2020",
+              "count": 13
+            },
+            {
+              "name": "US Decennial Census, 2010 & 2020 (in 2020 Census Geographies)",
+              "count": 14
+            },
+            {
+              "name": "US Decennial Census, 2010 (in 2020 Census Geographies)",
+              "count": 13
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 783
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 582
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "Early Childhood",
+              "count": 72
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "Demographics",
+              "count": 40
+            }
+          ]
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "PlanningRegion": {
+            "field": "PlanningRegion",
+            "type": "string",
+            "alias": "Planning Region"
+          }
+        }
+      },
+      "uscongress": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "US House Districts",
+        "shortlabel": "US House",
+        "boundingGEO": "State",
+        "visible": true,
+        "selected": false,
+        "priority": 6,
+        "stats": {
+          "count": 4100,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3338
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 783
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 582
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            }
+          ]
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "PlanningRegion": {
+            "field": "PlanningRegion",
+            "type": "string",
+            "alias": "Planning Region"
+          }
+        }
+      },
+      "gazcta": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Zip Code Tabulation Areas (ZCTA)",
+        "shortlabel": "ZCTAs",
+        "boundingGEO": "State",
+        "visible": true,
+        "selected": false,
+        "priority": 8,
+        "stats": {
+          "count": 3761,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3339
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 11
+            },
+            {
+              "name": "ACS, Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 1
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 535
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 544
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Health",
+              "count": 13
+            }
+          ]
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "PlanningRegion": {
+            "field": "PlanningRegion",
+            "type": "string",
+            "alias": "Planning Region"
+          }
+        }
+      },
+      "coansa": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "City of Atlanta's Neighborhood Statistical Areas (NSAs)",
+        "shortlabel": "NSAs",
+        "boundingGEO": "Atlanta",
+        "visible": true,
+        "selected": false,
+        "priority": 12,
+        "stats": {
+          "count": 4113,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3339
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 11
+            },
+            {
+              "name": "ACS, Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 1
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 783
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 582
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "Health",
+              "count": 13
+            }
+          ]
+        }
+      },
+      "coanpu": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "City of Atlanta's Neighborhood Planning Units (NPUs)",
+        "shortlabel": "NPUs",
+        "boundingGEO": "Atlanta",
+        "visible": true,
+        "selected": false,
+        "priority": 11,
+        "stats": {
+          "count": 4113,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3339
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 11
+            },
+            {
+              "name": "ACS, Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 1
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 783
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 582
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "Health",
+              "count": 13
+            }
+          ]
+        }
+      },
+      "gatracts": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "#777777",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Census Tracts",
+        "shortlabel": "Census Tracts",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": true,
+        "priority": 10,
+        "stats": {
+          "count": 4003,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3342
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 17
+            },
+            {
+              "name": "ACS, Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 3
+            },
+            {
+              "name": "GA CACDS",
+              "count": 72
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Georgia Department of Public Health (DPH)",
+              "count": 54
+            },
+            {
+              "name": "Georgia Department of Education (GA DOE)",
+              "count": 39
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 535
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 544
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "Health",
+              "count": 24
+            },
+            {
+              "name": "Early Childhood",
+              "count": 72
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "Maternal Health",
+              "count": 54
+            },
+            {
+              "name": "Public School Data by Census Tract",
+              "count": 39
+            }
+          ]
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "LONGNAME": {
+            "field": "LONGNAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "COUNTY": {
+            "field": "COUNTY",
+            "type": "string",
+            "alias": "County"
+          },
+          "PlanningRegion": {
+            "field": "PlanningRegion",
+            "type": "string",
+            "alias": "Planning Region"
+          },
+          "ARCModelingArea": {
+            "field": "ARCModelingArea",
+            "type": "string",
+            "alias": "ARC Modeling Area"
+          }
+        }
+      },
+      "tract2020": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "#777777",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Census Tracts (2020)",
+        "shortlabel": "Census Tracts (2020)",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 10,
+        "stats": {
+          "count": 326,
+          "sources": [
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            },
+            {
+              "name": "US Decennial Census, 2020",
+              "count": 13
+            },
+            {
+              "name": "US Decennial Census, 2010 & 2020 (in 2020 Census Geographies)",
+              "count": 14
+            },
+            {
+              "name": "US Decennial Census, 2010 (in 2020 Census Geographies)",
+              "count": 13
+            }
+          ],
+          "categories": [
+            {
+              "name": "Demographic",
+              "count": 248
+            },
+            {
+              "name": "Housing",
+              "count": 38
+            },
+            {
+              "name": "Demographics",
+              "count": 40
+            }
+          ]
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "COUNTYNAME": {
+            "field": "COUNTYNAME",
+            "type": "string",
+            "alias": "County"
+          },
+          "PlanningRegion": {
+            "field": "PlanningRegion",
+            "type": "string",
+            "alias": "Planning Region"
+          },
+          "ARCModelingArea": {
+            "field": "ARCModelingArea",
+            "type": "string",
+            "alias": "ARC Modeling Area"
+          }
+        }
+      },
+      "gasenate": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Georgia Senate Districts",
+        "shortlabel": "State Senate",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 2,
+        "stats": {
+          "count": 4113,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3339
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 11
+            },
+            {
+              "name": "ACS, Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 1
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 783
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 582
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "Health",
+              "count": 13
+            }
+          ]
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "PlanningRegion": {
+            "field": "PlanningRegion",
+            "type": "string",
+            "alias": "Planning Region"
+          }
+        }
+      },
+      "gahouse": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Georgia House Districts",
+        "shortlabel": "State House",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 3,
+        "stats": {
+          "count": 4113,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3339
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 11
+            },
+            {
+              "name": "ACS, Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 1
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 783
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 582
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "Health",
+              "count": 13
+            }
+          ]
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "PlanningRegion": {
+            "field": "PlanningRegion",
+            "type": "string",
+            "alias": "Planning Region"
+          }
+        }
+      },
+      "counties": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "black",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "grey",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Counties",
+        "shortlabel": "Counties",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": true,
+        "priority": 3,
+        "stats": {
+          "count": 4225,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3339
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "GA CACDS",
+              "count": 72
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 11
+            },
+            {
+              "name": "ACS, Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 1
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            },
+            {
+              "name": "US Decennial Census, 2020",
+              "count": 13
+            },
+            {
+              "name": "US Decennial Census, 2010 & 2020 (in 2020 Census Geographies)",
+              "count": 14
+            },
+            {
+              "name": "US Decennial Census, 2010 (in 2020 Census Geographies)",
+              "count": 13
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 783
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 582
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "Early Childhood",
+              "count": 72
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "Health",
+              "count": 13
+            },
+            {
+              "name": "Demographics",
+              "count": 40
+            }
+          ]
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "PlanningRegion": {
+            "field": "PlanningRegion",
+            "type": "string",
+            "alias": "Planning Region"
+          },
+          "ARCModelingArea": {
+            "field": "ARCModelingArea",
+            "type": "string",
+            "alias": "ARC Modeling Area"
+          }
+        }
+      },
+      "state": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "State of Georgia",
+        "shortlabel": "Georgia",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 1,
+        "stats": {
+          "count": 4225,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3339
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "GA CACDS",
+              "count": 72
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 11
+            },
+            {
+              "name": "ACS, Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 1
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            },
+            {
+              "name": "US Decennial Census, 2020",
+              "count": 13
+            },
+            {
+              "name": "US Decennial Census, 2010 & 2020 (in 2020 Census Geographies)",
+              "count": 14
+            },
+            {
+              "name": "US Decennial Census, 2010 (in 2020 Census Geographies)",
+              "count": 13
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 783
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 582
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "Early Childhood",
+              "count": 72
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "Health",
+              "count": 13
+            },
+            {
+              "name": "Demographics",
+              "count": 40
+            }
+          ]
+        }
+      },
+      "cities": {
+        "style": {
+          "opacity": 0.7,
+          "borderColor": "blue",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "blue",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Cities",
+        "shortlabel": "Cities",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 4,
+        "stats": {
+          "count": 4140,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3338
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            },
+            {
+              "name": "US Decennial Census, 2020",
+              "count": 13
+            },
+            {
+              "name": "US Decennial Census, 2010 & 2020 (in 2020 Census Geographies)",
+              "count": 14
+            },
+            {
+              "name": "US Decennial Census, 2010 (in 2020 Census Geographies)",
+              "count": 13
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 783
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 582
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "Demographics",
+              "count": 40
+            }
+          ]
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "PlanningRegion": {
+            "field": "PlanningRegion",
+            "type": "string",
+            "alias": "Planning Region"
+          }
+        }
+      },
+      "ga-elem-schools-2019": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "black",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "pointRadius": 8,
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Elementary Schools, SY2019",
+        "shortlabel": "Elementary Schools SY2019",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 1,
+        "stats": {
+          "count": 98,
+          "sources": [
+            {
+              "name": "Georgia Department of Education (DOE)",
+              "count": 98
+            }
+          ],
+          "categories": [
+            {
+              "name": "Georgia School Data",
+              "count": 98
+            }
+          ]
+        }
+      },
+      "ga-middle-schools-2019": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "black",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "pointRadius": 8,
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Middle Schools, SY2019",
+        "shortlabel": "Middle Schools SY2019",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 1,
+        "stats": {
+          "count": 70,
+          "sources": [
+            {
+              "name": "Georgia Department of Education (DOE)",
+              "count": 70
+            }
+          ],
+          "categories": [
+            {
+              "name": "Georgia School Data",
+              "count": 70
+            }
+          ]
+        }
+      },
+      "ga-high-schools-2019": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "black",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "pointRadius": 8,
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "High Schools, SY2019",
+        "shortlabel": "High Schools SY2019",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 1,
+        "stats": {
+          "count": 187,
+          "sources": [
+            {
+              "name": "Georgia Department of Education (DOE)",
+              "count": 187
+            }
+          ],
+          "categories": [
+            {
+              "name": "Georgia School Data",
+              "count": 187
+            }
+          ]
+        }
+      },
+      "library": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "black",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "red",
+          "pointRadius": 6,
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Libraries (10-County)",
+        "shortlabel": "Libraries",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 1,
+        "stats": {
+          "count": 0,
+          "sources": [],
+          "categories": []
+        }
+      },
+      "greenspace": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "green",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "green",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Greenspace",
+        "shortlabel": "Greenspace",
+        "boundingGEO": "Atlanta",
+        "visible": true,
+        "selected": false,
+        "priority": 12,
+        "stats": {
+          "count": 0,
+          "sources": [],
+          "categories": []
+        }
+      }
+    },
+    "tutorials": [
+      {
+        "title": "Getting Started",
+        "description": "In this brief tutorial you will learn how to add layers, add data to layers, visualize that data on a map, and then share the results.",
+        "url": "https://www.youtube.com/embed/tAKfUVb0F70/"
+      },
+      {
+        "title": "Customizing Your Maps",
+        "description": "In this tutorial, you will learn how to customize how your map looks.",
+        "url": "https://www.youtube.com/embed/FE3YhMY6su4"
+      }
+    ],
+    "splash": {
+      "header": {
+        "main": ""
+      },
+      "body": [
+        {
+          "title": "Why are you here?",
+          "text": [
+            "This tool will help you change the world!",
+            "If it doesn't there, then we're sorry."
+          ],
+          "image": {
+            "url": "https://via.placeholder.com/480x300",
+            "caption": "This an image caption"
+          }
+        }
+      ],
+      "bodyContent": [
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "1em",
+            "width": "100%",
+            "textAlign": "center"
+          },
+          "content": "Welcome to"
+        },
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "4em",
+            "color": "#22225e",
+            "fontWeight": "700",
+            "width": "100%",
+            "textAlign": "center"
+          },
+          "content": "DataNexus"
+        },
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "1.2em",
+            "width": "100%",
+            "lineHeight": "1.2em",
+            "textAlign": "left"
+          },
+          "content": "Our latest, most powerful tool to find, visualize, analyze, and export community data."
+        },
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "1.2em",
+            "width": "100%",
+            "lineHeight": "1.2em",
+            "textAlign": "left"
+          },
+          "content": "Hundreds of easy-to-find demographic, education, health, and economic indicators from local, state, and national sources, all in one place, as well as the ability to upload and visualize your own data!"
+        },
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "1.2em",
+            "width": "100%",
+            "lineHeight": "1.2em",
+            "textAlign": "left"
+          },
+          "content": "Explore neighborhoods, census tracts, zip codes, cities, counties, and more geographies across the state of Georgia."
+        },
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "1.2em",
+            "width": "100%",
+            "lineHeight": "1.2em",
+            "textAlign": "left"
+          },
+          "content": "Data sources currently accessible via this tool are:"
+        },
+        {
+          "type": "text-list",
+          "style": {
+            "fontSize": "1em",
+            "lineHeight": "1.2em",
+            "borderRadius": "5px"
+          },
+          "content": [
+            "US Census Bureau's Decennial Census (1990, 2000, 2010, & 2020)",
+            "US Census Bureau's American Community Survey (ACS), 5-year estimates (2017 to 2019)",
+            "US Census Bureau's Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Data (2010, 2017, 2018, & 2019)",
+            "GA Department of Public Health (DPH) Maternal and Child Health Statistics (2004 to 2019)",
+            "GA Department of Educution (DOE) Student- and School-level Statistics (2018-19 School Year)",
+            "Georgia's Cross-Agency Child Data System (CACDS) Data (2017-2020) "
+          ]
+        },
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "1em",
+            "width": "100%",
+            "textAlign": "center",
+            "marginBottom": "0px"
+          },
+          "content": "Powered by"
+        },
+        {
+          "type": "image",
+          "style": {
+            "width": "200px"
+          },
+          "content": {
+            "url": "https://neighborhoodnexus.org/wp-content/uploads/2016/04/neighborhood-nexus-logo.png",
+            "alt": "Neighborhood Nexus Logo"
+          }
+        }
+      ],
+      "style": {
+        "backgroundImageUrl": "https://neighborhoodnexus.org/wp-content/uploads/2020/06/data-nexus-bg-6.png"
+      }
+    },
+    "charts": {
+      "scatterplot": {
+        "semanticIcon": null,
+        "materialIcon": "scatter_plot",
+        "xaxis": true,
+        "yaxis": true,
+        "selected": false,
+        "available": true
+      }
+    },
+    "table": {
+      "open": false
+    },
+    "layerlist": {
+      "open": true
+    },
+    "sourceManifest": {
+      "ACS": "US Census Bureau's American Community Survey (ACS), 5-year estimates",
+      "TIGER": "US Census Bureau's TIGER/Line",
+      "Decennial": " US Census Bureau's Decennial Census",
+      "ACS, TIGER": "US Census Bureau's American Community Survey (ACS) & TIGER/Line",
+      "Decennial/ACS": "US Census Bureau's American Community Survey (ACS), 5-year estimates & Decennial Census",
+      "LEHD Origin-Destination Data": " U.S. Census Bureau's Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Data",
+      "Georgia Department of Education (DOE)": "Georgia Department of Education (GA DOE)",
+      "Georgia Department of Education (GA DOE)": "Georgia Department of Education (GA DOE)",
+      "Georgia Department of Public Health (DPH)": "Georgia Department of Public Health (GA DPH) OASIS",
+      "GA CACDS": "Georgia's Cross-Agency Child Data System (CACDS)",
+      "LEHD, Origin-Destination Data": " U.S. Census Bureau's Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Data",
+      "Georgia Department of Public Health, OHIP (OASIS)": "Georgia Department of Public Health (GA DPH), OASIS",
+      "DOE": "Georgia Department of Education (GA DOE)",
+      "DPH OASIS": "Georgia Department of Public Health (GA DPH) OASIS",
+      "CACDS": "Georgia's Cross-Agency Child Data System (CACDS)",
+      "USDA": "US Department of Agriculture (USDA)",
+      "ACS, Georgia Department of Public Health, OHIP (OASIS)": "US Census Bureau's American Community Survey (ACS), 5-year estimates & Georgia Department of Public Health (GA DPH), OASIS",
+      "CACDS, Decennial Census": "Georgia's Cross-Agency Child Data System (CACDS) & US Census Bureau's Decennial Census",
+      "CDC": "Center for Disease Control (CDC)",
+      "US Decennial Census, 2020": "US Census Bureau's Decennial Census",
+      "US Decennial Census, 2010 & 2020 (in 2020 Census Geographies)": "US Census Bureau's Decennial Census",
+      "US Decennial Census, 2010 (in 2020 Census Geographies)": "US Census Bureau's Decennial Census",
+      "Census 2020 Redistricting Summary Data File": "US Census Bureau's Decennial Census",
+      "Census 2010 Redistricting Summary Data File": "US Census Bureau's Decennial Census",
+      "Census 2000 Redistricting Summary Data File": "US Census Bureau's Decennial Census",
+      "Census 2000 Summary File 1": "US Census Bureau's Decennial Census",
+      "Census 1990 Redistricting Summary Data File": "US Census Bureau's Decennial Census",
+      "Census 1990 Summary Tape File 1B": "US Census Bureau's Decennial Census",
+      "Census 2010 and 2020 Redistricting Summary Data Files": "US Census Bureau's Decennial Census",
+      "Census 2000 and 2020 Redistricting Summary Data Files": "US Census Bureau's Decennial Census",
+      "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File": "US Census Bureau's Decennial Census",
+      "Census 1990 and 2020 Redistricting Summary Data Files": "US Census Bureau's Decennial Census",
+      "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File": "US Census Bureau's Decennial Census"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "60ad2548ec36d34f02d6f45d"
+  },
+  "geoAPIs": [
+    "counties-geears",
+    "cities",
+    "gatracts",
+    "headstart",
+    "decal-elps",
+    "ga-pre-k",
+    "decal-elps-2",
+    "ushouse-geears",
+    "gasenate-geears",
+    "gahouse-geears"
+  ],
+  "dataAPIs": [
+    "GEEARS_county"
+  ],
+  "tileLayers": [
+    "tile-layer-color",
+    "tile-arcgis-grey",
+    "tile-arcgis-satellite"
+  ],
+  "name": "vdskerjes",
+  "style": {
+    "colorPalette": [
+      "#ffb3ba",
+      "#ffdfba",
+      "#ffffba",
+      "#baffc9",
+      "#bae1ff"
+    ],
+    "header": {
+      "logoUrl": "https://neighborhoodnexus.org/wp-content/uploads/2021/05/geears-avi.png",
+      "text": "READINESS RADAR"
+    },
+    "footer": {
+      "bgUrl": "https://www.transparenttextures.com/patterns/diagmonds-light.png",
+      "logoUrl": "https://neighborhoodnexus.org/wp-content/uploads/2016/04/neighborhood-nexus-logo.png",
+      "bgcolor": "#fcce58",
+      "logoLinkUrl": "https://neighborhoodnexus.org/"
+    },
+    "tabbedboxes": {
+      "bgcolor2": "lightgrey",
+      "bgcolor1": "lightgrey"
+    },
+    "navbar": {
+      "bgUrl": "https://www.transparenttextures.com/patterns/diagmonds-light.png",
+      "logoUrl": "https://via.placeholder.com/300x40.png?text=Logo+Goes+Here",
+      "bgcolor": "#fcce58"
+    },
+    "mainwrapper": {
+      "bgcolor": null
+    },
+    "global": {
+      "borderradius": "10px"
+    }
+  },
+  "states": {
+    "map": {
+      "center": [
+        32.765,
+        -83
+      ],
+      "zoom": 7.5
+    },
+    "layers": {
+      "gatracts": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "#777777",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": true,
+            "numOfBins": 72,
+            "colormap": "yignbu"
+          }
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "PlanningRegion": {
+            "field": "PlanningRegion",
+            "type": "string",
+            "alias": "Planning Region"
+          },
+          "COUNTY": {
+            "field": "COUNTY",
+            "type": "string",
+            "alias": "County"
+          },
+          "LONGNAME": {
+            "field": "LONGNAME",
+            "type": "string",
+            "alias": "Name"
+          }
+        },
+        "label": "Census Tracts",
+        "shortlabel": "Census Tracts",
+        "category": "Data Layers",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 10
+      },
+      "cities": {
+        "style": {
+          "fillOn": false,
+          "opacity": 0.3,
+          "borderColor": "blue",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "blue",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "Name"
+          }
+        },
+        "label": "Cities",
+        "shortlabel": "Cities",
+        "boundingGEO": "state",
+        "category": "Boundaries",
+        "visible": true,
+        "selected": true,
+        "noData": true,
+        "priority": 4
+      },
+      "counties-geears": {
+        "style": {
+          "opacity": 0.7,
+          "fillOn": "true",
+          "borderColor": "black",
+          "borderWidth": 2,
+          "borderType": "solid",
+          "fillColor": "transparent",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "spring"
+          }
+        },
+        "geoFieldManifest": {
+          "NAME10": {
+            "field": "NAME10",
+            "type": "string",
+            "alias": "Name"
+          },
+          "Profile": {
+            "field": "Profile",
+            "type": "url",
+            "alias": "County Profile URL"
+          }
+        },
+        "popup": {
+          "labelField": "NAME10",
+          "otherFields": [
+            {
+              "field": "Profile",
+              "type": "url",
+              "alias": "County Profile"
+            }
+          ],
+          "fields": [
+            "Profile"
+          ]
+        },
+        "label": "Counties and City of Atlanta (with Profiles)",
+        "shortlabel": "Counties + COA",
+        "boundingGEO": "state",
+        "category": "Data Layers",
+        "visible": true,
+        "selected": true,
+        "priority": 10,
+        "noFilter": true
+      },
+      "headstart": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "black",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "pointRadius": 6,
+          "data": {
+            "binType": "categorical",
+            "catBinning": {
+              "field": "Program_Ty",
+              "alias": "Program Type"
+            },
+            "colormapReverse": false,
+            "colormap": "portland",
+            "numOfBins": 72
+          }
+        },
+        "geoFieldManifest": {
+          "Center_Nam": {
+            "field": "Center_Nam",
+            "type": "string",
+            "alias": "Center Name"
+          },
+          "Program_Ty": {
+            "field": "Program_Ty",
+            "type": "string",
+            "alias": "Program Type"
+          },
+          "Program": {
+            "field": "Program",
+            "type": "string",
+            "alias": "Program"
+          },
+          "Address_Li": {
+            "field": "Address_Li",
+            "type": "string",
+            "alias": "Address"
+          },
+          "City": {
+            "field": "City",
+            "type": "string",
+            "alias": "City"
+          },
+          "State": {
+            "field": "State",
+            "type": "string",
+            "alias": "State"
+          },
+          "ZIP": {
+            "field": "ZIP",
+            "type": "string",
+            "alias": "ZIP"
+          },
+          "Phone": {
+            "field": "Phone",
+            "type": "string",
+            "alias": "Phone"
+          },
+          "Grant_Numb": {
+            "field": "Grant_Numb",
+            "type": "String",
+            "alias": "Grantee Name"
+          },
+          "Grantee_Na": {
+            "field": "Grantee_Na",
+            "type": "string",
+            "alias": "Grantee Name"
+          },
+          "Status_1": {
+            "field": "Status_1",
+            "type": "string",
+            "alias": "Status"
+          },
+          "Total_Slot": {
+            "field": "Total_Slot",
+            "type": "integer",
+            "alias": "Slots"
+          },
+          "Child_Care": {
+            "field": "Child_Care",
+            "type": "string",
+            "alias": "Child Care"
+          }
+        },
+        "label": "Head Start and Early Head Start",
+        "shortlabel": "Head Start",
+        "category": "Certified Programs",
+        "popup": {
+          "labelField": "Center_Nam",
+          "otherFields": [
+            {
+              "field": "Program_Ty",
+              "type": "string",
+              "alias": "Program Type"
+            },
+            {
+              "field": "Status_1",
+              "type": "string",
+              "alias": "Program Status"
+            }
+          ],
+          "fields": [
+            "Program_Ty",
+            "Program",
+            "Address_Li",
+            "City"
+          ]
+        },
+        "boundingGEO": "state",
+        "visible": false,
+        "selected": true,
+        "priority": 1,
+        "noData": true
+      },
+      "decal-elps": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "black",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "pointRadius": 6,
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "viridis",
+            "binType": "categorical",
+            "catBinning": {
+              "field": "ProgramType",
+              "alias": "Program Type"
+            }
+          }
+        },
+        "geoFieldManifest": {
+          "ProviderNumber": {
+            "field": "ProviderNumber",
+            "type": "string",
+            "alias": "Provider Number"
+          },
+          "ProgramType": {
+            "field": "ProgramType",
+            "type": "string",
+            "alias": "Program Type"
+          },
+          "Location_Name": {
+            "field": "Location_Name",
+            "type": "string",
+            "alias": "Location Name"
+          },
+          "Location_Status": {
+            "field": "Location_Status",
+            "type": "string",
+            "alias": "Location Status"
+          },
+          "Location_Phone": {
+            "field": "Location_Phone",
+            "type": "string",
+            "alias": "Location Phone"
+          },
+          "Location_Address": {
+            "field": "Location_Address",
+            "type": "string",
+            "alias": "Address"
+          },
+          "Location_City": {
+            "field": "Location_City",
+            "type": "string",
+            "alias": "City"
+          },
+          "Location_State": {
+            "field": "Location_State",
+            "type": "string",
+            "alias": "State"
+          },
+          "Location_ZipCode": {
+            "field": "Location_ZipCode",
+            "type": "string",
+            "alias": "Zip Code"
+          },
+          "Location_Capacity": {
+            "field": "Location_Capacity",
+            "type": "integer",
+            "alias": "Location Capacity"
+          },
+          "Serve_Infant": {
+            "field": "Serve_Infant",
+            "type": "string",
+            "alias": "Serve Infants?"
+          },
+          "Serve_Toddler": {
+            "field": "Serve_Toddler",
+            "type": "string",
+            "alias": "Serve Toddler?"
+          },
+          "Serve_PreSchool": {
+            "field": "Serve_PreSchool",
+            "type": "string",
+            "alias": "Serve Pre-School?"
+          },
+          "Serve_PreK": {
+            "field": "Serve_PreK",
+            "type": "string",
+            "alias": "Serve Pre-K?"
+          },
+          "Serve_SchoolAge": {
+            "field": "Serve_SchoolAge",
+            "type": "string",
+            "alias": "Serve School Age?"
+          },
+          "QualityRated_IsParticipant": {
+            "field": "QualityRated_IsParticipant",
+            "type": "string",
+            "alias": "Quality Rated Participant?"
+          },
+          "Quality_Rating": {
+            "field": "Quality_Rating",
+            "type": "string",
+            "alias": "Quality Rating"
+          },
+          "QualityRated_RatedOn": {
+            "field": "QualityRated_RatedOn",
+            "type": "string",
+            "alias": "Quality Rated Rated On"
+          },
+          "PreK_Slots_Awarded": {
+            "field": "PreK_Slots_Awarded",
+            "type": "integer",
+            "alias": "Pre-K Slots Awarded"
+          },
+          "PreK_Slots_Available": {
+            "field": "PreK_Slots_Available",
+            "type": "integer",
+            "alias": "Pre-K Slots Available"
+          },
+          "Has_NAEYC": {
+            "field": "Has_NAEYC",
+            "type": "string",
+            "alias": "NAEYC Accreditation?"
+          }
+        },
+        "label": "Early Learning Programs",
+        "shortlabel": "ELPs",
+        "category": "Certified Programs",
+        "boundingGEO": "state",
+        "visible": false,
+        "selected": true,
+        "priority": 1,
+        "noData": true,
+        "popup": {
+          "labelField": "Location_Name",
+          "otherFields": [
+            {
+              "field": "ProgramType",
+              "type": "string",
+              "alias": "Program Type"
+            }
+          ],
+          "fields": [
+            "ProgramType",
+            "Location_Address",
+            "Location_City",
+            "Location_Capacity",
+            "Serve_Infant",
+            "Serve_Toddler",
+            "Serve_PreSchool"
+          ]
+        }
+      },
+      "ga-pre-k": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "black",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "pointRadius": 6,
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "bone",
+            "binType": "categorical",
+            "catBinning": {
+              "field": "ProgramType",
+              "alias": "Program Type"
+            }
+          }
+        },
+        "geoFieldManifest": {
+          "ProgramType": {
+            "field": "ProgramType",
+            "type": "string",
+            "alias": "Program Type"
+          },
+          "Location_Name": {
+            "field": "Location_Name",
+            "type": "string",
+            "alias": "Name"
+          },
+          "Location_Phone": {
+            "field": "Location_Phone",
+            "type": "string",
+            "alias": "Location Phone"
+          },
+          "Location_Address": {
+            "field": "Location_Address",
+            "type": "string",
+            "alias": "Address"
+          },
+          "Location_City": {
+            "field": "Location_City",
+            "type": "string",
+            "alias": "City"
+          },
+          "Location_State": {
+            "field": "Location_State",
+            "type": "string",
+            "alias": "State"
+          },
+          "Location_ZipCode": {
+            "field": "Location_ZipCode",
+            "type": "string",
+            "alias": "Zip Code"
+          },
+          "Location_Capacity": {
+            "field": "Location_Capacity",
+            "type": "integer",
+            "alias": "Location Capacity"
+          },
+          "IsPreK": {
+            "field": "IsPreK",
+            "type": "string",
+            "alias": "GA Pre-K?"
+          },
+          "Serve_Infant": {
+            "field": "Serve_Infant",
+            "type": "string",
+            "alias": "Serve Infants?"
+          },
+          "Serve_Toddler": {
+            "field": "Serve_Toddler",
+            "type": "string",
+            "alias": "Serve Toddlers?"
+          },
+          "Serve_PreSchool": {
+            "field": "Serve_PreSchool",
+            "type": "string",
+            "alias": "Serve Pre-School?"
+          },
+          "Serve_SchoolAge": {
+            "field": "Serve_SchoolAge",
+            "type": "string",
+            "alias": "Serve School Age?"
+          },
+          "QualityRated_IsParticipant": {
+            "field": "QualityRated_IsParticipant",
+            "type": "string",
+            "alias": "Quality Rated Participant?"
+          },
+          "Quality_Rating": {
+            "field": "Quality_Rating",
+            "type": "string",
+            "alias": "Quality Rating?"
+          },
+          "QualityRated_RatedOn": {
+            "field": "QualityRated_RatedOn",
+            "type": "string",
+            "alias": "Quality Rated Rated On"
+          },
+          "PreK_Slots_Awarded": {
+            "field": "PreK_Slots_Awarded",
+            "type": "integer",
+            "alias": "Pre-K Slots Awarded"
+          },
+          "PreK_Slots_Available": {
+            "field": "PreK_Slots_Available",
+            "type": "integer",
+            "alias": "Pre-K Slots Available"
+          },
+          "Has_NAEYC": {
+            "field": "Has_NAEYC",
+            "type": "string",
+            "alias": "NAEYC Accreditation?"
+          }
+        },
+        "popup": {
+          "labelField": "Location_Name",
+          "otherFields": [
+            {
+              "field": "ProgramType",
+              "type": "string",
+              "alias": "Program Type"
+            }
+          ],
+          "fields": [
+            "ProgramType",
+            "Location_Address",
+            "Location_City",
+            "Location_Capacity",
+            "IsPreK",
+            "Quality_Rating"
+          ]
+        },
+        "label": "Georgia Pre-K Programs",
+        "shortlabel": "Pre-K",
+        "category": "Certified Programs",
+        "boundingGEO": "state",
+        "visible": false,
+        "selected": true,
+        "priority": 1,
+        "noData": true
+      },
+      "decal-elps-2": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "black",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "pointRadius": 6,
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "spring",
+            "binType": "categorical",
+            "catBinning": {
+              "field": "Quality_Rating",
+              "alias": "Rating"
+            }
+          }
+        },
+        "geoFieldManifest": {
+          "ProgramType": {
+            "field": "ProgramType",
+            "type": "string",
+            "alias": "Program Type"
+          },
+          "Location_Name": {
+            "field": "Location_Name",
+            "type": "string",
+            "alias": "Location Name"
+          },
+          "Location_Phone": {
+            "field": "Location_Phone",
+            "type": "string",
+            "alias": "Location Phone"
+          },
+          "Location_Address": {
+            "field": "Location_Address",
+            "type": "string",
+            "alias": "Address"
+          },
+          "Location_City": {
+            "field": "Location_City",
+            "type": "string",
+            "alias": "City"
+          },
+          "Location_State": {
+            "field": "Location_State",
+            "type": "string",
+            "alias": "State"
+          },
+          "Location_ZipCode": {
+            "field": "Location_ZipCode",
+            "type": "string",
+            "alias": "Zip Code"
+          },
+          "Location_Capacity": {
+            "field": "Location_Capacity",
+            "type": "integer",
+            "alias": "Location Capacity"
+          },
+          "IsPreK": {
+            "field": "IsPreK",
+            "type": "string",
+            "alias": "GA Pre-K?"
+          },
+          "Serve_Infant": {
+            "field": "Serve_Infant",
+            "type": "string",
+            "alias": "Serve Infants?"
+          },
+          "Serve_Toddler": {
+            "field": "Serve_Toddler",
+            "type": "string",
+            "alias": "Serve Toddler?"
+          },
+          "Serve_PreSchool": {
+            "field": "Serve_PreSchool",
+            "type": "string",
+            "alias": "Serve Pre-School?"
+          },
+          "Serve_SchoolAge": {
+            "field": "Serve_SchoolAge",
+            "type": "string",
+            "alias": "Serve School Age?"
+          },
+          "QualityRated_IsParticipant": {
+            "field": "QualityRated_IsParticipant",
+            "type": "string",
+            "alias": "Quality Rated Participant?"
+          },
+          "Quality_Rating": {
+            "field": "Quality_Rating",
+            "type": "string",
+            "alias": "Quality Rating"
+          },
+          "QualityRated_RatedOn": {
+            "field": "QualityRated_RatedOn",
+            "type": "string",
+            "alias": "Quality Rated Rated On"
+          },
+          "PreK_Slots_Awarded": {
+            "field": "PreK_Slots_Awarded",
+            "type": "integer",
+            "alias": "Pre-K Slots Awarded"
+          },
+          "PreK_Slots_Available": {
+            "field": "PreK_Slots_Available",
+            "type": "integer",
+            "alias": "Pre-K Slots Available"
+          },
+          "Has_NAEYC": {
+            "field": "Has_NAEYC",
+            "type": "string",
+            "alias": "NAEYC Accreditation?"
+          }
+        },
+        "label": "Quality Rated Programs",
+        "shortlabel": "Quality Rated",
+        "category": "Certified Programs",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": true,
+        "priority": 1,
+        "noData": true,
+        "popup": {
+          "labelField": "Location_Name",
+          "otherFields": [
+            {
+              "field": "ProgramType",
+              "type": "string",
+              "alias": "Program Type"
+            }
+          ],
+          "fields": [
+            "ProgramType",
+            "Location_Address",
+            "Location_City",
+            "Location_ZipCode",
+            "Location_Phone",
+            "IsPreK",
+            "Serve_Infant",
+            "Serve_Toddler",
+            "Serve_PreSchool",
+            "Serve_SchoolAge",
+            "QualityRated_IsParticipant",
+            "Quality_Rating",
+            "Has_NAEYC"
+          ]
+        }
+      },
+      "ushouse-geears": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "orange",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "orange",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "geoFieldManifest": {
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "Name"
+          },
+          "Profile": {
+            "field": "Profile",
+            "type": "url",
+            "alias": "US House Profile URL"
+          }
+        },
+        "popup": {
+          "labelField": "NAME",
+          "otherFields": [
+            {
+              "field": "Profile",
+              "type": "url",
+              "alias": "US House Profile"
+            }
+          ],
+          "fields": [
+            "Profile"
+          ]
+        },
+        "label": "US House Districts-GEEARS",
+        "shortlabel": "US House-GEEARS",
+        "boundingGEO": "State",
+        "category": "Boundaries",
+        "visible": false,
+        "selected": true,
+        "noData": true,
+        "priority": 6
+      },
+      "gasenate-geears": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "purple",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "purple",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "geoFieldManifest": {
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "Name"
+          },
+          "Profile": {
+            "field": "Profile",
+            "type": "url",
+            "alias": "Georgia Senate Profile URL"
+          }
+        },
+        "popup": {
+          "labelField": "NAME",
+          "otherFields": [
+            {
+              "field": "Profile",
+              "type": "url",
+              "alias": "Georgia Senate Profile"
+            }
+          ],
+          "fields": [
+            "Profile"
+          ]
+        },
+        "label": "Georgia Senate Districts-GEEARS",
+        "shortlabel": "State Senate-GEEARS",
+        "boundingGEO": "state",
+        "category": "Boundaries",
+        "visible": false,
+        "selected": true,
+        "noData": true,
+        "priority": 2
+      },
+      "gahouse-geears": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "geoFieldManifest": {
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "Name"
+          },
+          "Profile": {
+            "field": "Profile",
+            "type": "url",
+            "alias": "Georgia House Profile URL"
+          }
+        },
+        "popup": {
+          "labelField": "NAME",
+          "otherFields": [
+            {
+              "field": "Profile",
+              "type": "url",
+              "alias": "Georgia House Profile"
+            }
+          ],
+          "fields": [
+            "Profile"
+          ]
+        },
+        "label": "Georgia House Districts-GEEARS",
+        "shortlabel": "State House-GEEARS",
+        "boundingGEO": "state",
+        "category": "Boundaries",
+        "visible": false,
+        "selected": true,
+        "noData": true,
+        "priority": 3
+      }
+    },
+    "tutorials": [
+      {
+        "title": "Getting Started",
+        "description": "In this brief tutorial you will learn how to add layers, add data to layers, visualize that data on a map, and then share the results.",
+        "url": "https://www.youtube.com/embed/tAKfUVb0F70/"
+      },
+      {
+        "title": "Customizing Your Maps",
+        "description": "In this tutorial, you will learn how to customize how your map looks.",
+        "url": "https://www.youtube.com/embed/FE3YhMY6su4"
+      }
+    ],
+    "splash": {
+      "header": {
+        "main": "Welcome to the GEEARS Readiness Radar Tool"
+      },
+      "body": [
+        {
+          "title": "The GEEARS Readiness Radar provides education leaders and advocates with curated data relevant to early childhood and school readiness in Georgia. ",
+          "text": [
+            "Ideal for community-level planning, users can quickly assess child well-being and early learning resources. Selected indicators are available for small area (census tracts) and county geographies, as well as point-level schools and early education program sites."
+          ],
+          "image": {
+            "url": "https://cdn.evbuc.com/eventlogos/161489115/geearslogonobackground.png"
+          }
+        }
+      ],
+      "bodyContent": [
+        {
+          "type": "image",
+          "style": {},
+          "content": {
+            "url": "https://cdn.evbuc.com/eventlogos/161489115/geearslogonobackground.png",
+            "alt": "GEEARS logo"
+          }
+        },
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "1.2em",
+            "fontWeight": "700"
+          },
+          "content": "The GEEARS Readiness Radar provides education leaders and advocates with curated data relevant to early childhood and school readiness in Georgia."
+        },
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "1em"
+          },
+          "content": "Ideal for community-level planning, users can quickly assess child well-being and early learning resources. Selected indicators are available for small area (census tracts) and county geographies, as well as point-level schools and early education program sites."
+        },
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "1em"
+          },
+          "content": "Many community indicators can be accessed in the tool, including:"
+        },
+        {
+          "type": "text-list",
+          "style": {
+            "fontSize": "1em"
+          },
+          "content": [
+            "GEEARS Early Childhood Index (census tract layer)",
+            "Milestone performance data (census tract and county layers)",
+            "Public health data (census and county layers)",
+            "Updating quality rated and other early education program locations (asset layer)",
+            "Downloadable community profiles (county layer)"
+          ]
+        },
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "1em",
+            "color": "orange"
+          },
+          "content": "Contact GEEARS Research Director, Hanah Goldberg (hgoldberg@geears.org) with questions."
+        }
+      ]
+    },
+    "charts": {
+      "scatterplot": {
+        "semanticIcon": null,
+        "materialIcon": "scatter_plot",
+        "xaxis": true,
+        "yaxis": true,
+        "selected": false,
+        "available": true
+      }
+    },
+    "table": {
+      "open": false
+    },
+    "layerlist": {
+      "open": false
+    }
+  }
+},{
+  "_id": {
+    "$oid": "61b765e6b21fa40b8c92e0f7"
+  },
+  "geoAPIs": [
+    "state",
+    "counties",
+    "gazcta",
+    "cities",
+    "gahouse",
+    "gatracts",
+    "tract2020",
+    "coanpu",
+    "coansa",
+    "rc",
+    "rc2021",
+    "superdistrict",
+    "ga-elem-schools-2019",
+    "ga-middle-schools-2019",
+    "ga-high-schools-2019",
+    "library",
+    "greenspace",
+    "gahouse-geears",
+    "gasenate-geears",
+    "ushouse-geears"
+  ],
+  "dataAPIs": [
+    "ACSAllGeo2017-0",
+    "ACSAllGeo2017-1",
+    "ACSAllGeo2017-2",
+    "ACSAllGeo2017-3",
+    "ACSAllGeo2017-4",
+    "ACSAllGeo2017-5",
+    "ACSAllGeo2017-6",
+    "ACSAllGeo2017-7",
+    "ACSAllGeo2018-0",
+    "ACSAllGeo2018-1",
+    "ACSAllGeo2018-2",
+    "ACSAllGeo2018-3",
+    "ACSAllGeo2018-4",
+    "ACSAllGeo2018-5",
+    "ACSAllGeo2018-6",
+    "ACSAllGeo2018-7",
+    "ACSAllGeo2018-8",
+    "ACSAllGeo2018-9",
+    "GA_Elem_Schools_2019",
+    "GA_Middle_Schools_2019",
+    "GA_High_Schools_2019",
+    "JobFlows_LEHD_2010_2017",
+    "Maternal_Health_2008_18",
+    "School_By_Tract_18_19",
+    "ACSAllGeo2019-Change2000",
+    "ACSAllGeo2019-Change2010",
+    "ACSAllGeo2019-Economic",
+    "ACSAllGeo2019-Demographic",
+    "ACSAllGeo2019-Social",
+    "ACSAllGeo2019-Housing",
+    "ACSAllGeo2019-RaceEconomic",
+    "ACSAllGeo2019-RaceDemographic",
+    "ACSAllGeo2019-RaceSocial",
+    "ACSAllGeo2019-RaceHousing",
+    "Maternal_Health_Asthma_2015_19",
+    "JobFlows_LEHD_2010_2018",
+    "CACDS_2017_20",
+    "PopChange_Multi_Geos_2010_20",
+    "Asthma_2008_18",
+    "JobFlows_LEHD_2010_2019",
+    "PopChange_1990to2020"
+  ],
+  "tileLayers": [
+    "tile-layer-color",
+    "tile-arcgis-grey",
+    "tile-arcgis-satellite",
+    "tile-arcgis-color",
+    "tile-natgeo",
+    "tile-layer-dark"
+  ],
+  "name": "dev",
+  "style": {
+    "colorPalette": [
+      "#ffb3ba",
+      "#ffdfba",
+      "#ffffba",
+      "#baffc9",
+      "#bae1ff"
+    ],
+    "header": {
+      "logoUrl": "https://neighborhoodnexus.org/wp-content/uploads/2020/05/neighborhood-nexus-logo-sticky-2x-2.png",
+      "text": "DataNexus"
+    },
+    "footer": {
+      "bgUrl": "https://www.transparenttextures.com/patterns/diagmonds-light.png",
+      "logoUrl": "https://neighborhoodnexus.org/wp-content/uploads/2016/04/neighborhood-nexus-logo.png",
+      "bgcolor": "#EDF3F1",
+      "logoLinkUrl": "https://neighborhoodnexus.org/"
+    },
+    "tabbedboxes": {
+      "bgcolor2": "lightgrey",
+      "bgcolor1": "lightgrey"
+    },
+    "navbar": {
+      "bgUrl": "https://www.transparenttextures.com/patterns/diagmonds-light.png",
+      "logoUrl": "https://via.placeholder.com/300x40.png?text=Logo+Goes+Here",
+      "bgcolor": "#EDF3F1"
+    },
+    "mainwrapper": {
+      "bgcolor": null
+    },
+    "global": {
+      "borderradius": "10px"
+    }
+  },
+  "states": {
+    "map": {
+      "center": [
+        33.765,
+        -84.4
+      ],
+      "zoom": 10
+    },
+    "layers": {
+      "rc": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Regional Commissions",
+        "shortlabel": "RCs",
+        "boundingGEO": "State",
+        "visible": true,
+        "selected": false,
+        "priority": 2,
+        "stats": {
+          "count": 3748,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3338
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 535
+            },
+            {
+              "name": "Economic",
+              "count": 935
+            },
+            {
+              "name": "Housing",
+              "count": 544
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            }
+          ]
+        }
+      },
+      "rc2021": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Regional Commissions (New)",
+        "shortlabel": "RCs (New)",
+        "boundingGEO": "State",
+        "visible": true,
+        "selected": false,
+        "priority": 2,
+        "stats": {
+          "count": 392,
+          "sources": [
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            },
+            {
+              "name": "US Decennial Census, 2020",
+              "count": 13
+            },
+            {
+              "name": "US Decennial Census, 2010 & 2020 (in 2020 Census Geographies)",
+              "count": 14
+            },
+            {
+              "name": "US Decennial Census, 2010 (in 2020 Census Geographies)",
+              "count": 13
+            }
+          ],
+          "categories": [
+            {
+              "name": "Economic",
+              "count": 66
+            },
+            {
+              "name": "Demographic",
+              "count": 248
+            },
+            {
+              "name": "Housing",
+              "count": 38
+            },
+            {
+              "name": "Demographics",
+              "count": 40
+            }
+          ]
+        }
+      },
+      "superdistrict": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Super Districts",
+        "shortlabel": "SDs",
+        "boundingGEO": "State",
+        "visible": true,
+        "priority": 7,
+        "selected": false,
+        "stats": {
+          "count": 4212,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3338
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "GA CACDS",
+              "count": 72
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            },
+            {
+              "name": "US Decennial Census, 2020",
+              "count": 13
+            },
+            {
+              "name": "US Decennial Census, 2010 & 2020 (in 2020 Census Geographies)",
+              "count": 14
+            },
+            {
+              "name": "US Decennial Census, 2010 (in 2020 Census Geographies)",
+              "count": 13
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 783
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 582
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "Early Childhood",
+              "count": 72
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "Demographics",
+              "count": 40
+            }
+          ]
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "PlanningRegion": {
+            "field": "PlanningRegion",
+            "type": "string",
+            "alias": "Planning Region"
+          }
+        }
+      },
+      "ushouse-geears": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "orange",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "orange",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "US House Districts-GEEARS",
+        "shortlabel": "US House-GEEARS",
+        "boundingGEO": "State",
+        "visible": true,
+        "selected": false,
+        "priority": 6,
+        "stats": {
+          "count": 0,
+          "sources": [],
+          "categories": []
+        },
+        "geoFieldManifest": {
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "Profile": {
+            "field": "Profile",
+            "type": "url",
+            "alias": "Profile"
+          }
+        }
+      },
+      "gazcta": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Zip Code Tabulation Areas (ZCTA)",
+        "shortlabel": "ZCTAs",
+        "boundingGEO": "State",
+        "visible": true,
+        "selected": false,
+        "priority": 8,
+        "stats": {
+          "count": 3761,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3339
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 11
+            },
+            {
+              "name": "ACS, Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 1
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 535
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 544
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Health",
+              "count": 13
+            }
+          ]
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "PlanningRegion": {
+            "field": "PlanningRegion",
+            "type": "string",
+            "alias": "Planning Region"
+          }
+        }
+      },
+      "coansa": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "City of Atlanta's Neighborhood Statistical Areas (NSAs)",
+        "shortlabel": "NSAs",
+        "boundingGEO": "Atlanta",
+        "visible": true,
+        "selected": false,
+        "priority": 12,
+        "stats": {
+          "count": 4113,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3339
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 11
+            },
+            {
+              "name": "ACS, Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 1
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 783
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 582
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "Health",
+              "count": 13
+            }
+          ]
+        }
+      },
+      "coanpu": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "City of Atlanta's Neighborhood Planning Units (NPUs)",
+        "shortlabel": "NPUs",
+        "boundingGEO": "Atlanta",
+        "visible": true,
+        "selected": false,
+        "priority": 11,
+        "stats": {
+          "count": 4113,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3339
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 11
+            },
+            {
+              "name": "ACS, Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 1
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 783
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 582
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "Health",
+              "count": 13
+            }
+          ]
+        }
+      },
+      "gatracts": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "#777777",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Census Tracts",
+        "shortlabel": "Census Tracts",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": true,
+        "priority": 10,
+        "stats": {
+          "count": 4003,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3342
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 17
+            },
+            {
+              "name": "ACS, Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 3
+            },
+            {
+              "name": "GA CACDS",
+              "count": 72
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Georgia Department of Public Health (DPH)",
+              "count": 54
+            },
+            {
+              "name": "Georgia Department of Education (GA DOE)",
+              "count": 39
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 535
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 544
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "Health",
+              "count": 24
+            },
+            {
+              "name": "Early Childhood",
+              "count": 72
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "Maternal Health",
+              "count": 54
+            },
+            {
+              "name": "Public School Data by Census Tract",
+              "count": 39
+            }
+          ]
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "LONGNAME": {
+            "field": "LONGNAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "COUNTY": {
+            "field": "COUNTY",
+            "type": "string",
+            "alias": "County"
+          },
+          "PlanningRegion": {
+            "field": "PlanningRegion",
+            "type": "string",
+            "alias": "Planning Region"
+          },
+          "ARCModelingArea": {
+            "field": "ARCModelingArea",
+            "type": "string",
+            "alias": "ARC Modeling Area"
+          }
+        }
+      },
+      "tract2020": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "#777777",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Census Tracts (2020)",
+        "shortlabel": "Census Tracts (2020)",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 10,
+        "stats": {
+          "count": 326,
+          "sources": [
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            },
+            {
+              "name": "US Decennial Census, 2020",
+              "count": 13
+            },
+            {
+              "name": "US Decennial Census, 2010 & 2020 (in 2020 Census Geographies)",
+              "count": 14
+            },
+            {
+              "name": "US Decennial Census, 2010 (in 2020 Census Geographies)",
+              "count": 13
+            }
+          ],
+          "categories": [
+            {
+              "name": "Demographic",
+              "count": 248
+            },
+            {
+              "name": "Housing",
+              "count": 38
+            },
+            {
+              "name": "Demographics",
+              "count": 40
+            }
+          ]
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "COUNTYNAME": {
+            "field": "COUNTYNAME",
+            "type": "string",
+            "alias": "County"
+          },
+          "PlanningRegion": {
+            "field": "PlanningRegion",
+            "type": "string",
+            "alias": "Planning Region"
+          },
+          "ARCModelingArea": {
+            "field": "ARCModelingArea",
+            "type": "string",
+            "alias": "ARC Modeling Area"
+          }
+        }
+      },
+      "gasenate-geears": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "purple",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "purple",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Georgia Senate Districts-GEEARS",
+        "shortlabel": "State Senate-GEEARS",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 2,
+        "stats": {
+          "count": 0,
+          "sources": [],
+          "categories": []
+        },
+        "geoFieldManifest": {
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "Profile": {
+            "field": "Profile",
+            "type": "url",
+            "alias": "Profile"
+          }
+        }
+      },
+      "gahouse": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Georgia House Districts",
+        "shortlabel": "State House",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 3,
+        "stats": {
+          "count": 4113,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3339
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 11
+            },
+            {
+              "name": "ACS, Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 1
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 783
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 582
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "Health",
+              "count": 13
+            }
+          ]
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "PlanningRegion": {
+            "field": "PlanningRegion",
+            "type": "string",
+            "alias": "Planning Region"
+          }
+        }
+      },
+      "cities": {
+        "style": {
+          "opacity": 0.7,
+          "borderColor": "blue",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "blue",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Cities",
+        "shortlabel": "Cities",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 4,
+        "stats": {
+          "count": 4140,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3338
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            },
+            {
+              "name": "US Decennial Census, 2020",
+              "count": 13
+            },
+            {
+              "name": "US Decennial Census, 2010 & 2020 (in 2020 Census Geographies)",
+              "count": 14
+            },
+            {
+              "name": "US Decennial Census, 2010 (in 2020 Census Geographies)",
+              "count": 13
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 783
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 582
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "Demographics",
+              "count": 40
+            }
+          ]
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "PlanningRegion": {
+            "field": "PlanningRegion",
+            "type": "string",
+            "alias": "Planning Region"
+          }
+        }
+      },
+      "counties": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "black",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "grey",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Counties",
+        "shortlabel": "Counties",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": true,
+        "priority": 3,
+        "stats": {
+          "count": 4225,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3339
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "GA CACDS",
+              "count": 72
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 11
+            },
+            {
+              "name": "ACS, Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 1
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            },
+            {
+              "name": "US Decennial Census, 2020",
+              "count": 13
+            },
+            {
+              "name": "US Decennial Census, 2010 & 2020 (in 2020 Census Geographies)",
+              "count": 14
+            },
+            {
+              "name": "US Decennial Census, 2010 (in 2020 Census Geographies)",
+              "count": 13
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 783
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 582
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "Early Childhood",
+              "count": 72
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "Health",
+              "count": 13
+            },
+            {
+              "name": "Demographics",
+              "count": 40
+            }
+          ]
+        },
+        "geoFieldManifest": {
+          "GEOID": {
+            "field": "GEOID",
+            "type": "string",
+            "alias": "GEOID"
+          },
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "PlanningRegion": {
+            "field": "PlanningRegion",
+            "type": "string",
+            "alias": "Planning Region"
+          },
+          "ARCModelingArea": {
+            "field": "ARCModelingArea",
+            "type": "string",
+            "alias": "ARC Modeling Area"
+          }
+        }
+      },
+      "state": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "State of Georgia",
+        "shortlabel": "Georgia",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 1,
+        "stats": {
+          "count": 4225,
+          "sources": [
+            {
+              "name": "Decennial",
+              "count": 173
+            },
+            {
+              "name": "Decennial/ACS",
+              "count": 95
+            },
+            {
+              "name": "ACS",
+              "count": 3339
+            },
+            {
+              "name": "TIGER",
+              "count": 3
+            },
+            {
+              "name": "ACS, TIGER",
+              "count": 7
+            },
+            {
+              "name": "GA CACDS",
+              "count": 72
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "LEHD, Origin-Destination Data",
+              "count": 66
+            },
+            {
+              "name": "Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 11
+            },
+            {
+              "name": "ACS, Georgia Department of Public Health, OHIP (OASIS)",
+              "count": 1
+            },
+            {
+              "name": "Census 2020 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2010 Redistricting Summary Data File",
+              "count": 40
+            },
+            {
+              "name": "Census 2000 Redistricting Summary Data File",
+              "count": 35
+            },
+            {
+              "name": "Census 2000 Summary File 1",
+              "count": 5
+            },
+            {
+              "name": "Census 1990 Redistricting Summary Data File",
+              "count": 36
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B",
+              "count": 4
+            },
+            {
+              "name": "Census 2010 and 2020 Redistricting Summary Data Files",
+              "count": 42
+            },
+            {
+              "name": "Census 2000 and 2020 Redistricting Summary Data Files",
+              "count": 36
+            },
+            {
+              "name": "Census 2000 Summary File 1  and 2020 Redistricting Summary Data File",
+              "count": 6
+            },
+            {
+              "name": "Census 1990 and 2020 Redistricting Summary Data Files",
+              "count": 37
+            },
+            {
+              "name": "Census 1990 Summary Tape File 1B  and 2020 Redistricting Summary Data File",
+              "count": 5
+            },
+            {
+              "name": "US Decennial Census, 2020",
+              "count": 13
+            },
+            {
+              "name": "US Decennial Census, 2010 & 2020 (in 2020 Census Geographies)",
+              "count": 14
+            },
+            {
+              "name": "US Decennial Census, 2010 (in 2020 Census Geographies)",
+              "count": 13
+            }
+          ],
+          "categories": [
+            {
+              "name": "Change since 2000",
+              "count": 268
+            },
+            {
+              "name": "Demographic",
+              "count": 783
+            },
+            {
+              "name": "Economic",
+              "count": 1001
+            },
+            {
+              "name": "Housing",
+              "count": 582
+            },
+            {
+              "name": "Social",
+              "count": 930
+            },
+            {
+              "name": "Change since 2010",
+              "count": 404
+            },
+            {
+              "name": "Early Childhood",
+              "count": 72
+            },
+            {
+              "name": "LEHD Origin-Destination Data",
+              "count": 132
+            },
+            {
+              "name": "Health",
+              "count": 13
+            },
+            {
+              "name": "Demographics",
+              "count": 40
+            }
+          ]
+        }
+      },
+      "ga-elem-schools-2019": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "black",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "pointRadius": 8,
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Elementary Schools, SY2019",
+        "shortlabel": "Elementary Schools SY2019",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 1,
+        "stats": {
+          "count": 98,
+          "sources": [
+            {
+              "name": "Georgia Department of Education (DOE)",
+              "count": 98
+            }
+          ],
+          "categories": [
+            {
+              "name": "Georgia School Data",
+              "count": 98
+            }
+          ]
+        }
+      },
+      "ga-middle-schools-2019": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "black",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "pointRadius": 8,
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Middle Schools, SY2019",
+        "shortlabel": "Middle Schools SY2019",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 1,
+        "stats": {
+          "count": 70,
+          "sources": [
+            {
+              "name": "Georgia Department of Education (DOE)",
+              "count": 70
+            }
+          ],
+          "categories": [
+            {
+              "name": "Georgia School Data",
+              "count": 70
+            }
+          ]
+        }
+      },
+      "ga-high-schools-2019": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "black",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "pointRadius": 8,
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "High Schools, SY2019",
+        "shortlabel": "High Schools SY2019",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 1,
+        "stats": {
+          "count": 187,
+          "sources": [
+            {
+              "name": "Georgia Department of Education (DOE)",
+              "count": 187
+            }
+          ],
+          "categories": [
+            {
+              "name": "Georgia School Data",
+              "count": 187
+            }
+          ]
+        }
+      },
+      "library": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "black",
+          "borderWidth": 1,
+          "borderType": "solid",
+          "fillColor": "red",
+          "pointRadius": 6,
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Libraries (10-County)",
+        "shortlabel": "Libraries",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 1,
+        "stats": {
+          "count": 0,
+          "sources": [],
+          "categories": []
+        }
+      },
+      "greenspace": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "green",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "green",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "geoFieldManifest": {
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "Name"
+          },
+          "COUNTY": {
+            "field": "COUNTY",
+            "type": "string",
+            "alias": "County"
+          },
+          "TYPE": {
+            "field": "TYPE",
+            "type": "string",
+            "alias": "Type"
+          },
+          "ACRES": {
+            "field": "ACRES",
+            "type": "double",
+            "alias": "Acres"
+          }
+        },
+        "label": "Greenspace",
+        "shortlabel": "Greenspace",
+        "boundingGEO": "Atlanta",
+        "visible": true,
+        "selected": false,
+        "priority": 12,
+        "stats": {
+          "count": 0,
+          "sources": [],
+          "categories": []
+        }
+      },
+      "gahouse-geears": {
+        "style": {
+          "opacity": 0.8,
+          "borderColor": "teal",
+          "borderWidth": 3,
+          "borderType": "solid",
+          "fillColor": "teal",
+          "data": {
+            "colormapReverse": false,
+            "numOfBins": 72,
+            "colormap": "portland"
+          }
+        },
+        "label": "Georgia House Districts-GEEARS",
+        "shortlabel": "State House-GEEARS",
+        "boundingGEO": "state",
+        "visible": true,
+        "selected": false,
+        "priority": 3,
+        "stats": {
+          "count": 0,
+          "sources": [],
+          "categories": []
+        },
+        "geoFieldManifest": {
+          "NAME": {
+            "field": "NAME",
+            "type": "string",
+            "alias": "NAME"
+          },
+          "Profile": {
+            "field": "Profile",
+            "type": "url",
+            "alias": "Profile"
+          }
+        }
+      }
+    },
+    "tutorials": [
+      {
+        "title": "Getting Started",
+        "description": "In this brief tutorial you will learn how to add layers, add data to layers, visualize that data on a map, and then share the results.",
+        "url": "https://www.youtube.com/embed/tAKfUVb0F70/"
+      },
+      {
+        "title": "Customizing Your Maps",
+        "description": "In this tutorial, you will learn how to customize how your map looks.",
+        "url": "https://www.youtube.com/embed/FE3YhMY6su4"
+      }
+    ],
+    "splash": {
+      "header": {
+        "main": ""
+      },
+      "body": [
+        {
+          "title": "Why are you here?",
+          "text": [
+            "This tool will help you change the world!",
+            "If it doesn't there, then we're sorry."
+          ],
+          "image": {
+            "url": "https://via.placeholder.com/480x300",
+            "caption": "This an image caption"
+          }
+        }
+      ],
+      "bodyContent": [
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "1em",
+            "width": "100%",
+            "textAlign": "center"
+          },
+          "content": "Welcome to"
+        },
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "4em",
+            "color": "#22225e",
+            "fontWeight": "700",
+            "width": "100%",
+            "textAlign": "center"
+          },
+          "content": "DataNexus"
+        },
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "1.2em",
+            "width": "100%",
+            "lineHeight": "1.2em",
+            "textAlign": "left"
+          },
+          "content": "Our latest, most powerful tool to find, visualize, analyze, and export community data."
+        },
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "1.2em",
+            "width": "100%",
+            "lineHeight": "1.2em",
+            "textAlign": "left"
+          },
+          "content": "Hundreds of easy-to-find demographic, education, health, and economic indicators from local, state, and national sources, all in one place, as well as the ability to upload and visualize your own data!"
+        },
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "1.2em",
+            "width": "100%",
+            "lineHeight": "1.2em",
+            "textAlign": "left"
+          },
+          "content": "Explore neighborhoods, census tracts, zip codes, cities, counties, and more geographies across the state of Georgia."
+        },
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "1.2em",
+            "width": "100%",
+            "lineHeight": "1.2em",
+            "textAlign": "left"
+          },
+          "content": "Data sources currently accessible via this tool are:"
+        },
+        {
+          "type": "text-list",
+          "style": {
+            "fontSize": "1em",
+            "lineHeight": "1.2em",
+            "borderRadius": "5px"
+          },
+          "content": [
+            "US Census Bureau's Decennial Census (2000, 2010, & 2020)",
+            "US Census Bureau's American Community Survey (ACS), 5-year estimates (2017 to 2019)",
+            "US Census Bureau's Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Data (2010, 2017, & 2018)",
+            "GA Department of Public Health (DPH) Maternal and Child Health Statistics (2004 to 2019)",
+            "GA Department of Educution (DOE) Student- and School-level Statistics (2018-19 School Year)",
+            "Georgia's Cross-Agency Child Data System (CACDS) Data (2017-2020) "
+          ]
+        },
+        {
+          "type": "text-block",
+          "style": {
+            "fontSize": "1em",
+            "width": "100%",
+            "textAlign": "center",
+            "marginBottom": "0px"
+          },
+          "content": "Powered by"
+        },
+        {
+          "type": "image",
+          "style": {
+            "width": "200px"
+          },
+          "content": {
+            "url": "https://neighborhoodnexus.org/wp-content/uploads/2016/04/neighborhood-nexus-logo.png",
+            "alt": "Neighborhood Nexus Logo"
+          }
+        }
+      ],
+      "style": {
+        "backgroundImageUrl": "https://neighborhoodnexus.org/wp-content/uploads/2020/06/data-nexus-bg-6.png"
+      }
+    },
+    "charts": {
+      "scatterplot": {
+        "semanticIcon": null,
+        "materialIcon": "scatter_plot",
+        "xaxis": true,
+        "yaxis": true,
+        "selected": false,
+        "available": true
+      }
+    },
+    "table": {
+      "open": false
+    },
+    "layerlist": {
+      "open": true
+    },
+    "sourceManifest": {
+      "ACS": "American Community Survey (ACS), U.S. Census Bureau",
+      "TIGER": "Topologically Integrated Geographic Encoding and Referencing (TIGER), U.S. Census Bureau",
+      "Decennial": "Decennial Census of Population and Housing, U.S. Census Bureau",
+      "ACS, TIGER": "American Community Survey (ACS) and Topologically Integrated Geographic Encoding and Referencing (TIGER), U.S. Census Bureau",
+      "Decennial/ACS": "American Community Survey (ACS) and Decennial Census of Population and Housing, U.S. Census Bureau",
+      "LEHD Origin-Destination Data": "Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Data, U.S. Census Bureau",
+      "Georgia Department of Education (DOE)": "Georgia Department of Education",
+      "Georgia Department of Education (GA DOE)": "Georgia Department of Education",
+      "Georgia Department of Public Health (DPH)": "Georgia Department of Public Health",
+      "GA CACDS": "Georgia's Cross-Agency Child Data System (CACDS)"
+    }
+  }
+}]
